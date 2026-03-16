@@ -4,64 +4,123 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>完全攻略ロードマップ｜AI×スマホ アフィリエイト攻略ガイド</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;900&family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { font-family: 'Inter', 'Noto Sans JP', sans-serif; }
+        .fade-up {
+            animation: fadeUp 0.8s ease-out forwards;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        @keyframes fadeUp {
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+    </style>
 </head>
-<body class="bg-slate-50 text-slate-900 font-sans leading-tight">
-    <nav class="bg-black text-white p-4 text-center font-black tracking-widest text-[10px] uppercase">
-        AI & Mobile Affiliate Strategy / 2026 Edition
+<body class="bg-[#f8fafc] text-[#1e293b] antialiased">
+
+    <nav class="sticky top-0 z-50 bg-white/70 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-4xl mx-auto p-4 flex justify-between items-center">
+            <a href="index.html" class="font-black tracking-tighter text-lg hover:opacity-70 transition-opacity no-underline text-inherit">SMART AI GUIDE</a>
+            <div class="flex items-center space-x-2">
+                <span class="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></span>
+                <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Active 2026</span>
+            </div>
+        </div>
     </nav>
-    <main class="max-w-4xl mx-auto p-6 md:p-12">
-        <header class="text-center mb-16">
-            <h1 class="text-5xl md:text-8xl font-black mb-6 tracking-tighter">THE GUIDE</h1>
-            <p class="text-slate-500 max-w-lg mx-auto leading-relaxed">スマホ1台、資金ゼロから「個人の力」で資産を創る全10章。</p>
+
+    <main class="max-w-4xl mx-auto p-6 md:p-16">
+        <header class="text-center mb-20 fade-up">
+            <h1 class="text-5xl md:text-8xl font-black mb-8 tracking-tighter leading-none bg-gradient-to-b from-slate-900 to-slate-500 bg-clip-text text-transparent">
+                THE ROADMAP
+            </h1>
+            <p class="text-slate-500 max-w-lg mx-auto leading-relaxed text-sm md:text-base font-medium">
+                資金ゼロからの逆転劇。スマホ1台で「個人の城」を築き、<br class="hidden md:block">
+                自分自身を最大の資産にするための全10章。
+            </p>
         </header>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <a href="showcase.html" class="bg-white p-6 rounded-3xl border border-slate-200 no-underline text-inherit hover:border-indigo-500 transition-all shadow-sm">
-                <span class="text-indigo-600 font-bold text-[10px]">Step 01</span><h2 class="text-lg font-bold">AIサイト実例集</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            
+            <a href="showcase.html" class="fade-up bg-white p-8 rounded-[32px] border border-slate-100 no-underline text-inherit card-hover transition-all duration-300 shadow-sm" style="animation-delay: 0.1s;">
+                <span class="text-indigo-600 font-black text-[10px] uppercase tracking-[0.2em] mb-4 block">Step 01</span>
+                <h2 class="text-xl font-black mb-2">AIサイト実例集</h2>
+                <p class="text-slate-400 text-xs leading-relaxed">まずは「現実」を知ることから。AIが生成した驚愕のデザイン。 </p>
             </a>
-            <div class="bg-slate-200 p-6 rounded-3xl border border-slate-300 opacity-60 flex items-center justify-between">
-                <div><span class="text-slate-400 font-bold text-[10px]">Step 02</span><h2 class="text-lg font-bold text-slate-400">GitHubで城を持つ</h2></div>
-                <span class="text-slate-400">✔</span>
+
+            <div class="fade-up bg-slate-100/50 p-8 rounded-[32px] border border-slate-100 opacity-60 flex items-center justify-between" style="animation-delay: 0.2s;">
+                <div><span class="text-slate-400 font-black text-[10px] uppercase tracking-[0.2em] mb-4 block">Step 02</span><h2 class="text-xl font-black text-slate-400">GitHubで城を持つ</h2></div>
+                <div class="w-10 h-10 rounded-full bg-slate-200 flex items-center justify-center">✔</div>
             </div>
-            <a href="wordpress-setup.html" class="bg-white p-6 rounded-3xl border border-slate-200 no-underline text-inherit hover:border-yellow-500 transition-all">
-                <span class="text-yellow-600 font-bold text-[10px]">Step 03</span><h2 class="text-lg font-bold text-red-600">WordPress移行手順</h2>
+
+            <a href="wordpress-setup.html" class="fade-up bg-white p-8 rounded-[32px] border border-slate-100 no-underline text-inherit card-hover transition-all duration-300 shadow-sm" style="animation-delay: 0.3s;">
+                <span class="text-yellow-600 font-black text-[10px] uppercase tracking-[0.2em] mb-4 block">Step 03</span>
+                <h2 class="text-xl font-black mb-2 text-red-600">WordPress移行手順</h2>
+                <p class="text-slate-400 text-xs leading-relaxed">収益を加速させる「本番環境」の作り方。 </p>
             </a>
-            <a href="blog-story.html" class="bg-white p-6 rounded-3xl border border-slate-200 no-underline text-inherit hover:border-slate-500 transition-all">
-                <span class="text-slate-500 font-bold text-[10px]">Step 04</span><h2 class="text-lg font-bold">逆転の思考法</h2>
+
+            <a href="blog-story.html" class="fade-up bg-white p-8 rounded-[32px] border border-slate-100 no-underline text-inherit card-hover transition-all duration-300 shadow-sm" style="animation-delay: 0.4s;">
+                <span class="text-slate-500 font-black text-[10px] uppercase tracking-[0.2em] mb-4 block">Step 04</span>
+                <h2 class="text-xl font-black mb-2">逆転の思考法</h2>
+                <p class="text-slate-400 text-xs leading-relaxed">挫折をエネルギーに変える、マインドの再定義。 </p>
             </a>
-            <a href="blog-ai-technique.html" class="bg-indigo-600 p-6 rounded-3xl text-white no-underline shadow-md hover:scale-[1.02] transition-all">
-                <span class="text-indigo-200 font-bold text-[10px]">Step 05</span><h2 class="text-lg font-bold">AIプロンプト術</h2>
+
+            <a href="blog-ai-technique.html" class="fade-up bg-[#4f46e5] p-8 rounded-[32px] text-white no-underline card-hover transition-all duration-300 shadow-lg shadow-indigo-200" style="animation-delay: 0.5s;">
+                <span class="text-indigo-200 font-black text-[10px] uppercase tracking-[0.2em] mb-4 block">Step 05</span>
+                <h2 class="text-xl font-black mb-2">プロンプト活用術</h2>
+                <p class="text-indigo-100/70 text-xs leading-relaxed">AIを「相棒」に変える、具体的な対話の技術。 </p>
             </a>
-            <a href="blog-canva-design.html" class="bg-emerald-600 p-6 rounded-3xl text-white no-underline shadow-md hover:scale-[1.02] transition-all">
-                <span class="text-emerald-200 font-bold text-[10px]">Step 06</span><h2 class="text-lg font-bold">Canva×AI DX</h2>
+
+            <a href="blog-canva-design.html" class="fade-up bg-[#059669] p-8 rounded-[32px] text-white no-underline card-hover transition-all duration-300 shadow-lg shadow-emerald-200" style="animation-delay: 0.6s;">
+                <span class="text-emerald-200 font-black text-[10px] uppercase tracking-[0.2em] mb-4 block">Step 06</span>
+                <h2 class="text-xl font-black mb-2">Canva×AI デザイン</h2>
+                <p class="text-emerald-100/70 text-xs leading-relaxed">デザインを「書く」時代の、圧倒的な効率化。 </p>
             </a>
-            <a href="blog-web3-ai.html" class="bg-fuchsia-700 p-6 rounded-3xl text-white no-underline shadow-md hover:scale-[1.02] transition-all">
-                <span class="text-fuchsia-200 font-bold text-[10px]">Step 07</span><h2 class="text-lg font-bold">Web3×AI 未来展望</h2>
+
+            <a href="blog-web3-ai.html" class="fade-up bg-[#a21caf] p-8 rounded-[32px] text-white no-underline card-hover transition-all duration-300 shadow-lg shadow-fuchsia-200" style="animation-delay: 0.7s;">
+                <span class="text-fuchsia-200 font-black text-[10px] uppercase tracking-[0.2em] mb-4 block">Step 07</span>
+                <h2 class="text-xl font-black mb-2">Web3×AI 未来展望</h2>
+                <p class="text-fuchsia-100/70 text-xs leading-relaxed">次世代の収益モデルと、個人の自立について。 </p>
             </a>
-            <a href="blog-ai-tools.html" class="bg-slate-800 p-6 rounded-3xl text-white no-underline shadow-md hover:scale-[1.02] transition-all">
-                <span class="text-slate-300 font-bold text-[10px]">Step 08</span><h2 class="text-lg font-bold">AIツール神7</h2>
+
+            <a href="blog-ai-tools.html" class="fade-up bg-[#1e293b] p-8 rounded-[32px] text-white no-underline card-hover transition-all duration-300 shadow-lg shadow-slate-200" style="animation-delay: 0.8s;">
+                <span class="text-slate-400 font-black text-[10px] uppercase tracking-[0.2em] mb-4 block">Step 08</span>
+                <h2 class="text-xl font-black mb-2">厳選AIツール神7</h2>
+                <p class="text-slate-400 text-xs leading-relaxed">迷いを断つ。スマホ副業を支える最強の道具箱。 </p>
             </a>
-            <a href="blog-time-management.html" class="bg-stone-700 p-6 rounded-3xl text-white no-underline shadow-md hover:scale-[1.02] transition-all">
-                <span class="text-stone-300 font-bold text-[10px]">Step 09</span><h2 class="text-lg font-bold">時間管理術</h2>
+
+            <a href="blog-time-management.html" class="fade-up bg-[#44403c] p-8 rounded-[32px] text-white no-underline card-hover transition-all duration-300 shadow-lg shadow-stone-200" style="animation-delay: 0.9s;">
+                <span class="text-stone-400 font-black text-[10px] uppercase tracking-[0.2em] mb-4 block">Step 09</span>
+                <h2 class="text-xl font-black mb-2">時間管理術</h2>
+                <p class="text-stone-400 text-xs leading-relaxed">忙しさを言い訳にしない、AIによる時間創出。 </p>
             </a>
-            <a href="blog-branding.html" class="bg-slate-900 p-8 rounded-3xl text-white no-underline col-span-1 md:col-span-2 shadow-2xl border-2 border-indigo-500/30 hover:scale-[1.03] transition-all">
-                <div class="flex justify-between items-center">
+
+            <a href="blog-branding.html" class="fade-up bg-black p-10 rounded-[40px] text-white no-underline col-span-1 md:col-span-2 card-hover transition-all duration-300 shadow-2xl border border-white/10 group" style="animation-delay: 1s;">
+                <div class="flex flex-col md:flex-row justify-between items-center text-center md:text-left">
                     <div>
-                        <span class="bg-indigo-600 px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-widest">Goal</span>
-                        <h2 class="text-3xl font-black mt-2 tracking-tighter">Step 10: 個人ブランディング</h2>
-                        <p class="text-slate-400 text-sm mt-2">あなた自身を資産化し、未来の自由を確定させる。</p>
+                        <span class="bg-indigo-600 px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-[0.3em]">Goal</span>
+                        <h2 class="text-3xl md:text-4xl font-black mt-4 tracking-tighter italic">Personal Branding</h2>
+                        <p class="text-slate-400 text-sm mt-3 font-medium">あなた自身を最大の資産にし、未来の自由を確定させる。</p>
                     </div>
-                    <span class="text-6xl opacity-20">👤</span>
+                    <div class="mt-8 md:mt-0 text-6xl group-hover:scale-125 transition-transform duration-500">🏆</div>
                 </div>
             </a>
         </div>
     </main>
-    <footer class="bg-white py-16 text-center border-t border-slate-200">
-        <p class="text-slate-400 text-[10px] mb-8 tracking-widest">PERSONAL FREEDOM THROUGH AI</p>
-        <a href="https://x.com/hoshi_tomokazu" target="_blank" class="inline-flex items-center bg-black text-white font-bold py-4 px-12 rounded-full no-underline shadow-xl hover:scale-105 transition-transform">
-            FOLLOW THE JOURNEY
-        </a>
+
+    <footer class="py-24 text-center border-t border-slate-200 bg-white">
+        <p class="text-slate-400 text-[10px] font-black uppercase tracking-[0.5em] mb-12 italic">Build with Passion & AI</p>
+        <div class="flex flex-col items-center">
+            <a href="https://x.com/hoshi_tomokazu" target="_blank" class="bg-black text-white font-black py-5 px-14 rounded-full no-underline hover:scale-110 active:scale-95 transition-all shadow-[0_20px_50px_rgba(0,0,0,0.15)] text-sm tracking-widest">
+                FOLLOW ON X
+            </a>
+        </div>
     </footer>
+
 </body>
 </html>
