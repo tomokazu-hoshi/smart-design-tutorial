@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>秘伝のプロンプト集 | スマホ1台で「城」を築く魔法の言葉</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Noto Sans JP', sans-serif; }
+        .code-font { font-family: 'JetBrains Mono', monospace; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 leading-relaxed text-sm md:text-base">
+
+    <nav class="bg-white/80 backdrop-blur-md border-b p-4 sticky top-0 z-50">
+        <div class="max-w-4xl mx-auto flex justify-between items-center font-bold">
+            <a href="sitemap.html" class="text-slate-500 no-underline hover:text-slate-900 transition-colors">⬅ ロードマップに戻る</a>
+            <span class="text-indigo-600">Prompt Gallery</span>
+        </div>
+    </nav>
+
+    <main class="max-w-3xl mx-auto p-6 md:p-12">
+        <header class="mb-16 text-center">
+            <h1 class="text-3xl md:text-5xl font-black text-slate-900 mb-6 tracking-tighter">
+                AIを操る「魔法の言葉」<br class="hidden md:block">全公開。
+            </h1>
+            <p class="text-slate-500">このサイト自体も、これから紹介するプロンプトをGeminiに入力して作られました。</p>
+        </header>
+
+        <section class="space-y-16">
+            <div class="bg-white rounded-[40px] border border-slate-200 shadow-sm overflow-hidden">
+                <div class="bg-slate-900 text-white p-6">
+                    <h2 class="font-bold flex items-center">
+                        <span class="bg-indigo-500 w-6 h-6 rounded-full flex items-center justify-center mr-3 text-xs italic font-black text-white">1</span>
+                        サイト全体の構成（ロードマップ）を作る
+                    </h2>
+                </div>
+                <div class="p-8">
+                    <p class="mb-6 text-slate-600">
+                        まず最初に行ったのは、読者が迷わない「地図」を作ること。
+                        Geminiに、私のこれまでの経験（介護、挫折、再起）を伝え、どう構成すべきかを問いかけました。
+                    </p>
+                    <div class="bg-slate-100 p-6 rounded-2xl code-font text-xs md:text-sm text-slate-700 leading-loose overflow-x-auto whitespace-pre-wrap">「私はスマホ1台で副業を始めたい初心者です。介護の仕事をしながら、資金0から資産を築くための全10章の学習ロードマップを、具体的かつワクワクする名前で作成してください。」</div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-[40px] border border-slate-200 shadow-sm overflow-hidden">
+                <div class="bg-slate-900 text-white p-6">
+                    <h2 class="font-bold flex items-center">
+                        <span class="bg-emerald-500 w-6 h-6 rounded-full flex items-center justify-center mr-3 text-xs italic font-black text-white">2</span>
+                        漆黒のデザイン（サテライト）を生成する
+                    </h2>
+                </div>
+                <div class="p-8">
+                    <p class="mb-6 text-slate-600">
+                        「情報の嘘を見抜く」という硬派なサイトを作る際、色のイメージを正確に伝えました。
+                    </p>
+                    <div class="bg-slate-100 p-6 rounded-2xl code-font text-xs md:text-sm text-slate-700 leading-loose overflow-x-auto whitespace-pre-wrap">「Tailwind CSSを使って、漆黒（#0f172a）を基調とした、サイバーかつ誠実なデザインの1枚完結LPを作ってください。ターゲットは情報の嘘に騙されたくない賢明な読者です。」</div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-[40px] border border-slate-200 shadow-sm overflow-hidden border-dashed border-indigo-300">
+                <div class="p-8 text-center">
+                    <h3 class="font-bold text-xl mb-4">このページ自体も、AIとの対話から。</h3>
+                    <p class="text-slate-500 text-sm mb-8 leading-relaxed">
+                        私がGeminiと交わしている実際の対話は、<br class="hidden md:block">
+                        私の公式X（旧Twitter）でも随時シェアしています。
+                    </p>
+                    <a href="https://x.com/hoshi_tomokazu" target="_blank" class="inline-block bg-slate-900 text-white font-bold py-4 px-10 rounded-full no-underline hover:bg-slate-700 transition-all shadow-lg">
+                        Xで最新のプロンプトを追う ➡
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <footer class="mt-24 text-center">
+            <p class="text-slate-400 text-xs italic">「魔法を覚える必要はありません。対話のコツを掴むだけです。」</p>
+        </footer>
+    </main>
+
+</body>
+</html>
