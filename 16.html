@@ -1,105 +1,33 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H56XHD5MLW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-H56XHD5MLW');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>16. AIを活用したインタラクティブ・ウィジェット制作術 | Zero-Cost SEO 100本ノック</title>
-    <meta name="description" content="AIを使って読者参加型の計算ツールや診断クイズ（ウィジェット）をサイトに組み込む方法を解説。滞在時間を延ばし、エンゲージメントを高める次世代のUI/UX戦略を詳説します。">
-    <link rel="canonical" href="https://tomokazu-hoshi.github.io/16.html">
-    
-    <meta property="og:type" content="article">
-    <meta property="og:title" content="16. AIを活用したインタラクティブ・ウィジェット制作術">
-    <meta property="og:description" content="AIがコードを書く。読者を飽きさせない「動く」コンテンツの作り方。">
-    <meta property="og:image" content="https://tomokazu-hoshi.github.io/images/ogp.png">
-    <meta name="twitter:card" content="summary_large_image">
-    
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Article",
-      "headline": "16. Creating Interactive Widgets with AI",
-      "author": { "@type": "Person", "name": "星 友和" },
-      "publisher": { "@type": "Organization", "name": "Zero-Cost SEO" },
-      "image": "https://tomokazu-hoshi.github.io/images/ogp.png",
-      "datePublished": "2026-03-22T08:00:00+09:00"
-    }
-    </script>
-
-    <style>
-        :root { --main-blue: #002b5b; --accent-orange: #ff9900; --bg-light: #f4f7f9; }
-        body { font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif; line-height: 1.8; color: #333; margin: 0; padding: 0; background: #fff; }
-        .container { max-width: 850px; margin: 0 auto; padding: 0 25px; }
-        
-        /* パンくずリスト */
-        .breadcrumb { padding: 20px 0; font-size: 0.85rem; color: #666; }
-        .breadcrumb a { color: var(--main-blue); text-decoration: none; font-weight: bold; }
-
-        /* 記事ヘッダー */
-        header { margin-bottom: 40px; border-bottom: 4px solid var(--main-blue); padding-bottom: 20px; }
-        .article-num { color: var(--accent-orange); font-weight: bold; font-size: 1.2rem; display: block; }
-        h1 { font-size: 2.2rem; color: var(--main-blue); margin: 5px 0; }
-
-        /* 本文エリア */
-        .entry-content { font-size: 1.15rem; letter-spacing: 0.02em; }
-        .entry-content p { margin-bottom: 1.5em; }
-
-        /* ナビゲーション（次へ・前へ） */
-        .article-nav { display: flex; justify-content: space-between; gap: 15px; margin: 60px 0; padding-top: 30px; border-top: 1px solid #eee; }
-        .article-nav a { flex: 1; text-align: center; padding: 18px; text-decoration: none; border-radius: 5px; font-weight: bold; transition: 0.3s; font-size: 1rem; }
-        .btn-prev { background: #f0f0f0; color: #555; border: 1px solid #ddd; }
-        .btn-top { background: #fff; color: var(--main-blue); border: 1px solid var(--main-blue); }
-        .btn-next { background: var(--main-blue); color: #fff; }
-        .article-nav a:hover { opacity: 0.8; transform: translateY(-2px); }
-
-        @media (max-width: 600px) { .article-nav { flex-direction: column; } h1 { font-size: 1.8rem; } }
-    </style>
+    <title>16. 読者の心をつかむAI構成案 | Zero-Cost SEO</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<div class="container">
-    <nav class="breadcrumb">
-        <a href="/">TOP</a> ＞ <span id="category-name">基盤構築と基本戦略</span> ＞ 16. AIを活用したインタラクティブ・ウィジェット制作術
-    </nav>
-
-    <header>
-        <span class="article-num">NO.16</span>
-        <h1>AIを活用したインタラクティブ・ウィジェット制作術</h1>
-    </header>
-
-    <article class="entry-content">
-        <p>読者の滞在時間を延ばし、サイトへの愛着を深めてもらうためには、受動的に「読む」だけの体験から能動的に「参加する」体験への転換が必要です。Zero-Cost SEOでは、AI（ClaudeやChatGPTなど）にプログラムコードを生成させ、専門的な知識がなくても高機能な「インタラクティブ・ウィジェット」をサイトに実装します。</p>
-        <p>投資収益率（ROI）シミュレーターや、パーソナライズされた診断クイズなど、ユーザーが自ら数値を入力し、結果を得る仕組みは、SNSでのシェアを誘発し、自然な被リンク獲得にも繋がります。AIをエンジニアとして使いこなし、静的なブログを一歩先の「Webアプリケーション」へと進化させる手法を解説します。</p>
-    </article>
-
-    <div class="article-nav">
-        <a id="link-prev" href="#" class="btn-prev">← 前の記事</a>
-        <a href="/" class="btn-top">目次へ戻る</a>
-        <a id="link-next" href="#" class="btn-next">次の記事を読む →</a>
+<header class="main-header">
+    <div class="container">
+        <h1>Zero-Cost SEO</h1>
     </div>
-</div>
+</header>
 
-<script>
-    const filename = window.location.pathname.split('/').pop() || '16.html';
-    const currentNum = parseInt(filename.replace(/[^0-9]/g, ''));
-
-    if (!isNaN(currentNum)) {
-        const prev = document.getElementById('link-prev');
-        const next = document.getElementById('link-next');
-
-        if (currentNum > 1) {
-            prev.href = (currentNum - 1).toString().padStart(2, '0') + ".html";
-        } else {
-            prev.style.display = 'none';
-        }
-
-        if (currentNum < 100) {
-            next.href = (currentNum + 1).toString().padStart(2, '0') + ".html";
-        } else {
-            next.style.display = 'none';
-        }
-    }
-</script>
-
-</body>
-</html>
+<main class="container">
+    <a href="chapter2.html" class="back-link">← 第2章 目次へ戻る</a>
+    
+    <article class="post-content">
+        <h1>16. 読者の心をつかむAI構成案</h1>
+        <p>SEO記事の成否は、執筆を始める前の「構成」で8割が決まると言っても過言ではありません。AIを単なる代筆屋としてではなく、読者のインサイトを掘り下げる「編集者」として活用し、心を動かす設計図を作り上げましょう。</p>
+        
+        <h2>「検索意図」の先にある感情を捉える</h2>
+        <p>多くの人はAIに「〇〇というキーワードで構成を作って」とだけ命じますが、それでは無機質な情報の羅列になりがちです。Zero-Cost SEOでは、AIに対して「このキーワードで検索する読者は、どんな不安を抱え、読後にはどんな気持ちになりたいと思
