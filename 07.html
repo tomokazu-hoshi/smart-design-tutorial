@@ -10,7 +10,7 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>7. ドメインの選定とブランド構築 | Zero-Cost SEO</title>
+    <title>7. セマンティックHTML：検索エンジンに好かれる書き方 | Zero-Cost SEO</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
 </head>
@@ -19,6 +19,12 @@
 <header class="main-header">
     <div class="container">
         <h1>Zero-Cost SEO</h1>
+        <nav class="header-nav">
+            <ul>
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="chapter1.html">第1章</a></li>
+            </ul>
+        </nav>
     </div>
 </header>
 
@@ -26,14 +32,16 @@
     <a href="chapter1.html" class="back-link">← 第1章 目次へ戻る</a>
     
     <article class="post-content">
-        <h1>7. ドメインの選定とブランド構築</h1>
-        <p>ドメイン名は、インターネット上におけるあなたの「住所」であり、サイトの「顔」です。Zero-Cost SEOではGitHub Pagesのサブドメインをそのまま活用しますが、その名前の選び方一つで、将来的なブランド力とSEOの強さが決まります。</p>
-        
-        <h2>覚えやすく、意味の通じる名前を</h2>
-        <p>ドメイン名やサイト名は、短くて覚えやすく、かつサイトの内容が一目で伝わるものが理想です。ブランド構築とは「〇〇といえばこのサイト」という認識を読者に植え付ける作業です。安易な文字列ではなく、長く愛着を持てる名前を選定しましょう。</p>
+        <h1>7. セマンティックHTML：検索エンジンに好かれる書き方</h1>
+        <p>検索エンジンは、人間のように目で見てデザインを理解しているわけではありません。背後にあるHTMLタグの意味を読み取り、情報の重要度を判断しています。意味のあるタグ使い（セマンティックHTML）を徹底することで、サイトの評価を劇的に高めることができます。</p>
 
-        <h2>将来的な拡張性を視野に入れる</h2>
-        <p>最初は小さな特化サイトから始めたとしても、そのドメインが将来的に大きなメディアに育つ可能性があります。特定のキーワードに縛られすぎず、関連するトピックへ広げやすい柔軟なブランド名を設計することが、長期的な資産価値を高めるコツです。</p>
+        
+
+        <h2>「div」の多用を避け、意味のあるタグを選ぶ</h2>
+        <p>単に見栄えを整えるために <code>&lt;div&gt;</code> を多用するのは、検索エンジンに対して「どこが重要か」を隠しているのと同じです。主要なコンテンツには <code>&lt;main&gt;</code>、独立した記事には <code>&lt;article&gt;</code>、補足情報には <code>&lt;aside&gt;</code> を使うことで、クローラーはページ構造を正確に把握できるようになります。AIを使ってコードを生成する際も、これらのセマンティックな構造を意識したプロンプトを与えることが不可欠です。</p>
+
+        <h2>見出し（H1〜H6）の論理的な階層構造</h2>
+        <p>見出しタグは、本の目次のように論理的な順序で並べる必要があります。<code>&lt;h1&gt;</code> はそのページの主題であり、原則として1回のみ使用します。その下に <code>&lt;h2&gt;</code>、さらに詳細な区分として <code>&lt;h3&gt;</code> と順番に階層を下げていきます。デザイン上の都合で <code>&lt;h2&gt;</code> の次に <code>&lt;h4&gt;</code> を使うといった「順序飛ばし」は、SEO評価を損なう原因となります。論理的な構造は、ユーザーにとっても情報の整理を助け、結果として滞在時間の向上にも寄与します。</p>
     </article>
 
     <nav class="post-nav" style="display: flex; justify-content: space-between; margin: 40px 0; padding-top: 20px; border-top: 1px solid #eee;">
@@ -42,41 +50,30 @@
     </nav>
 
     <section class="article-footer-nav">
-        <h3>同じカテゴリー（第1章：基礎・環境構築編）の記事</h3>
+        <h3>同じカテゴリー（第1章：インフラ構築編）の記事</h3>
         <ul class="vertical-article-list">
-            <li><a href="01.html">1. Zero-Cost SEOの幕開け</a></li>
-            <li><a href="02.html">2. AIを軍師に迎える思考法</a></li>
-            <li><a href="03.html">3. 個人が資本に勝つための戦略</a></li>
-            <li><a href="04.html">4. GitHub Pagesを選ぶ理由</a></li>
-            <li><a href="05.html">5. 継続を力に変える習慣術</a></li>
-            <li><a href="06.html">6. 静的サイトジェネレーターの優位性</a></li>
-            <li><a href="07.html">7. ドメインの選定とブランド構築</a></li>
-            <li><a href="08.html">8. サーバーレス運営のコストメリット</a></li>
-            <li><a href="09.html">9. Gitによるコンテンツ管理の初歩</a></li>
-            <li><a href="10.html">10. GitHub Pagesの爆速設定</a></li>
-            <li><a href="11.html">11. セキュリティとしての静的配信</a></li>
-            <li><a href="12.html">12. HTML/CSSのSEO最適化</a></li>
-            <li><a href="13.html">13. 表示速度が順位に与える影響</a></li>
-            <li><a href="14.html">14. レスポンシブデザインの必須条件</a></li>
-            <li><a href="15.html">15. モバイルファーストインデックス対応</a></li>
+            <li><a href="01.html">1. コンセプト：コスト0で最強のSEO資産を作る</a></li>
+            <li><a href="02.html">2. GitHub Pages：サーバー代0円の圧倒的メリット</a></li>
+            <li><a href="03.html">3. 独自ドメインの取得とCloudflareの魔法</a></li>
+            <li><a href="04.html">4. 静的サイトがSEOで最強である物理的な理由</a></li>
+            <li><a href="05.html">5. GitHubデスクトップで管理する一生消えない資産</a></li>
+            <li><a href="06.html">6. 爆速HTML/CSSテンプレートの構造解説</a></li>
+            <li><a href="07.html">7. セマンティックHTML：検索エンジンに好かれる書き方</a></li>
+            <li><a href="08.html">8. Googleアナリティクス4(GA4)の収益用設定</a></li>
+            <li><a href="09.html">9. サーチコンソール：検索意図を可視化する初期設定</a></li>
+            <li><a href="10.html">10. XMLサイトマップとrobots.txtの戦略的配置</a></li>
+            <li><a href="11.html">11. ファビコンとOGP設定：SNS拡散の土台作り</a></li>
+            <li><a href="12.html">12. モバイルファーストインデックスの完全攻略</a></li>
+            <li><a href="13.html">13. SSL化（HTTPS）とセキュリティの信頼性</a></li>
+            <li><a href="14.html">14. 構造化データ（JSON-LD）で検索結果を独占する</a></li>
+            <li><a href="15.html">15. 第1章まとめ：収益を生むための土台完成</a></li>
         </ul>
-
-        <div style="margin-top: 40px; text-align: center;">
-            <a href="index.html" style="color: #666; text-decoration: none; font-size: 0.9rem; border-bottom: 1px solid #ddd;">
-                他のカテゴリーの記事を読む（トップページへ戻る）
-            </a>
-        </div>
     </section>
 </main>
 
 <footer class="main-footer">
     <div class="container">
-        <div style="margin-bottom: 20px;">
-            <a href="hosting-comparison-guide.html" style="color: #bbb; text-decoration: none; font-size: 0.75rem;">
-                Webサイト構築における無料と有料の真実：GitHubからWordPressへの移行ガイド
-            </a>
-        </div>
-        <p>&copy; 2026 Zero-Cost SEO - 星 友和</p>
+        <p>&copy; 2026 Zero-Cost SEO</p>
     </div>
 </footer>
 
