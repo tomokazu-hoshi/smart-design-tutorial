@@ -10,7 +10,7 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>11. セキュリティとしての静的配信 | Zero-Cost SEO</title>
+    <title>11. ファビコンとOGP設定：SNS拡散の土台作り | Zero-Cost SEO</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
 </head>
@@ -26,14 +26,19 @@
     <a href="chapter1.html" class="back-link">← 第1章 目次へ戻る</a>
     
     <article class="post-content">
-        <h1>11. セキュリティとしての静的配信</h1>
-        <p>Zero-Cost SEOで静的サイトを選択する理由は、速度やコストだけではありません。「セキュリティ」こそが、個人が長期的にサイトを運営し続けるための最大の守護神となります。</p>
-        
-        <h2>攻撃対象領域（アタックサーフェス）の排除</h2>
-        <p>WordPressのような動的サイトには、常にデータベースや管理画面へのログインが存在します。これらは悪意のある第三者にとっての「入り口」となり得ます。一方、GitHub Pagesで配信される静的サイトには、そもそも攻撃すべきデータベースも、ログイン画面も存在しません。この「入り口がない」という構造そのものが、最強のセキュリティ対策となります。</p>
+        <h1>11. ファビコンとOGP設定：SNS拡散の土台作り</h1>
+        <p>SEOは検索エンジンからの流入だけではありません。SNSで記事がシェアされた際の「見栄え」を整えることは、クリック率（CTR）を劇的に向上させ、結果としてサイトの認知度やドメインパワーを強化する重要なステップです。</p>
 
-        <h2>改ざんリスクとバックアップ</h2>
-        <p>万が一、ローカル環境でミスが起きても、Gitで管理されているため、過去の正常なバージョンへ瞬時に戻すことができます。サーバー側でのファイル改ざんリスクがほぼゼロであることは、サイトを「資産」として安心して放置（ロングテール集客）できることを意味します。セキュリティにリソースを割けない個人だからこそ、静的配信という選択が賢明なのです。</p>
+        [attachment_0](attachment)
+
+        <h2>OGP設定：シェアされた瞬間に「読みたくなる」仕掛け</h2>
+        <p>OGP（Open Graph Protocol）は、X（Twitter）やFacebookなどでサイトがシェアされた際、タイトルや画像、説明文を正しく表示させるための設定です。<code>&lt;head&gt;</code> 内に適切なメタタグ（og:title, og:image, og:description など）を配置しましょう。AIに記事の要約を依頼し、目を引くSNS用の説明文を生成させることで、拡散時の流入数を最大化できます。特に画像（og:image）はクリック率に直結するため、AIで生成した独自性の高い画像を設定することを推奨します。</p>
+
+        <h2>ファビコン：検索結果とタブでの「ブランド認知」</h2>
+        <p>ファビコンは、ブラウザのタブや検索結果のURL横に表示される小さなアイコンです。非常に小さなパーツですが、これがあることでユーザーは「どのサイトを開いているか」を一目で認識でき、再訪問時の安心感（ブランド認知）に繋がります。Googleのモバイル検索結果でもファビコンは表示されるため、設定していないサイトは信頼性で一歩出遅れることになります。AIでロゴデザイン案を出し、軽量な.ico形式や.png形式でルートディレクトリに配置しましょう。</p>
+
+        <h2>Twitterカードの最適化</h2>
+        <p>X（旧Twitter）での拡散を重視する場合、<code>twitter:card</code> タグの設定も不可欠です。画像を大きく見せる「summary_large_image」を選択することで、タイムライン上での占有面積が増え、より多くのユーザーの目に留まるようになります。これらの細かなメタ設定の積み重ねが、SNSからの「指名検索」を呼び込み、SEOにプラスの影響を与える好循環を生み出します。</p>
     </article>
 
     <nav class="post-nav" style="display: flex; justify-content: space-between; margin: 40px 0; padding-top: 20px; border-top: 1px solid #eee;">
@@ -42,40 +47,29 @@
     </nav>
 
     <section class="article-footer-nav">
-        <h3>同じカテゴリー（第1章：基礎・環境構築編）の記事</h3>
+        <h3>同じカテゴリー（第1章：インフラ構築編）の記事</h3>
         <ul class="vertical-article-list">
-            <li><a href="01.html">1. Zero-Cost SEOの幕開け</a></li>
-            <li><a href="02.html">2. AIを軍師に迎える思考法</a></li>
-            <li><a href="03.html">3. 個人が資本に勝つための戦略</a></li>
-            <li><a href="04.html">4. GitHub Pagesを選ぶ理由</a></li>
-            <li><a href="05.html">5. 継続を力に変える習慣術</a></li>
-            <li><a href="06.html">6. 静的サイトジェネレーターの優位性</a></li>
-            <li><a href="07.html">7. ドメインの選定とブランド構築</a></li>
-            <li><a href="08.html">8. サーバーレス運営のコストメリット</a></li>
-            <li><a href="09.html">9. Gitによるコンテンツ管理の初歩</a></li>
-            <li><a href="10.html">10. GitHub Pagesの爆速設定</a></li>
-            <li><a href="11.html">11. セキュリティとしての静的配信</a></li>
-            <li><a href="12.html">12. HTML/CSSのSEO最適化</a></li>
-            <li><a href="13.html">13. 表示速度が順位に与える影響</a></li>
-            <li><a href="14.html">14. レスポンシブデザインの必須条件</a></li>
-            <li><a href="15.html">15. モバイルファーストインデックス対応</a></li>
+            <li><a href="01.html">1. コンセプト：コスト0で最強のSEO資産を作る</a></li>
+            <li><a href="02.html">2. GitHub Pages：サーバー代0円の圧倒的メリット</a></li>
+            <li><a href="03.html">3. 独自ドメインの取得とCloudflareの魔法</a></li>
+            <li><a href="04.html">4. 静的サイトがSEOで最強である物理的な理由</a></li>
+            <li><a href="05.html">5. GitHubデスクトップで管理する一生消えない資産</a></li>
+            <li><a href="06.html">6. 爆速HTML/CSSテンプレートの構造解説</a></li>
+            <li><a href="07.html">7. セマンティックHTML：検索エンジンに好かれる書き方</a></li>
+            <li><a href="08.html">8. Googleアナリティクス4(GA4)の収益用設定</a></li>
+            <li><a href="09.html">9. サーチコンソール：検索意図を可視化する初期設定</a></li>
+            <li><a href="10.html">10. XMLサイトマップとrobots.txtの戦略的配置</a></li>
+            <li><a href="11.html">11. ファビコンとOGP設定：SNS拡散の土台作り</a></li>
+            <li><a href="12.html">12. モバイルファーストインデックスの完全攻略</a></li>
+            <li><a href="13.html">13. SSL化（HTTPS）とセキュリティの信頼性</a></li>
+            <li><a href="14.html">14. 構造化データ（JSON-LD）で検索結果を独占する</a></li>
+            <li><a href="15.html">15. 第1章まとめ：収益を生むための土台完成</a></li>
         </ul>
-
-        <div style="margin-top: 40px; text-align: center;">
-            <a href="index.html" style="color: #666; text-decoration: none; font-size: 0.9rem; border-bottom: 1px solid #ddd;">
-                他のカテゴリーの記事を読む（トップページへ戻る）
-            </a>
-        </div>
     </section>
 </main>
 
 <footer class="main-footer">
     <div class="container">
-        <div style="margin-bottom: 20px;">
-            <a href="hosting-comparison-guide.html" style="color: #bbb; text-decoration: none; font-size: 0.75rem;">
-                Webサイト構築における無料と有料の真実：GitHubからWordPressへの移行ガイド
-            </a>
-        </div>
         <p>&copy; 2026 Zero-Cost SEO - 星 友和</p>
     </div>
 </footer>
