@@ -10,7 +10,7 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>10. GitHub Pagesの爆速設定 | Zero-Cost SEO</title>
+    <title>10. XMLサイトマップとrobots.txtの戦略的配置 | Zero-Cost SEO</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
 </head>
@@ -26,14 +26,16 @@
     <a href="chapter1.html" class="back-link">← 第1章 目次へ戻る</a>
     
     <article class="post-content">
-        <h1>10. GitHub Pagesの爆速設定</h1>
-        <p>Zero-Cost SEOの環境構築における最大の衝撃は、サイト公開までのスピードです。複雑なサーバー契約やドメインの紐付け作業を待つ必要はありません。GitHub Pagesなら、思い立ったその瞬間に世界中へサイトを公開できます。</p>
-        
-        <h2>設定はわずか数クリック</h2>
-        <p>リポジトリを作成し、HTMLファイルをアップロードして、設定画面で「GitHub Pages」を有効にする。たったこれだけの作業で、HTTPS化されたセキュアなサイトが誕生します。この「公開までの心理的ハードルの低さ」が、個人クリエイターにとって最大の味方となります。</p>
+        <h1>10. XMLサイトマップとrobots.txtの戦略的配置</h1>
+        <p>クローラーにサイトの構造を正しく伝え、効率よく巡回してもらうためには、XMLサイトマップとrobots.txtの2つが欠かせません。これらは、検索エンジンのロボットに対する「案内図」と「立ち入り禁止の看板」の役割を果たします。</p>
 
-        <h2>「まず出す」ことがSEOの第一歩</h2>
-        <p>SEOにおいて、ドメインの運用期間（ドメインエイジ）は無視できない要素です。完璧なデザインや100記事が揃うのを待ってから公開するのではなく、まずはこの「爆速設定」でインデックスを開始させる。走りながら改善していくというアジャイルな姿勢が、結果として最短の成功を引き寄せます。</p>
+        
+
+        <h2>XMLサイトマップ：全記事の存在を漏らさず伝える</h2>
+        <p>XMLサイトマップ（sitemap.xml）は、サイト内に存在するすべてのページのリストです。静的サイトの場合、WordPressのように自動生成されないことが多いため、AIに最新の記事リストを渡し、XML形式で出力させて手動、あるいはスクリプトで配置する必要があります。これをサーチコンソールに登録することで、新しく追加した記事やリライトした記事がGoogleにいち早く発見され、インデックスされる確率が高まります。</p>
+
+        <h2>robots.txt：クロール予算を「価値あるページ」に集中させる</h2>
+        <p>robots.txtは、クローラーに対して「どのページをクロールすべきか（あるいはすべきでないか）」を指示するファイルです。すべてのページを無差別に巡回させるのではなく、管理用のファイルや重複コンテンツ、収益に寄与しない低品質なページをクロール対象から除外することで、Googleの「クロール予算（リソース）」を重要な記事に集中させることができます。AIにサイト構造を分析させ、SEO的に最も有利なrobots.txtの記述を生成し、ルートディレクトリに配置しましょう。この地味な設定が、大規模なサイトになるほど大きな順位の差となって現れます。</p>
     </article>
 
     <nav class="post-nav" style="display: flex; justify-content: space-between; margin: 40px 0; padding-top: 20px; border-top: 1px solid #eee;">
@@ -42,40 +44,29 @@
     </nav>
 
     <section class="article-footer-nav">
-        <h3>同じカテゴリー（第1章：基礎・環境構築編）の記事</h3>
+        <h3>同じカテゴリー（第1章：インフラ構築編）の記事</h3>
         <ul class="vertical-article-list">
-            <li><a href="01.html">1. Zero-Cost SEOの幕開け</a></li>
-            <li><a href="02.html">2. AIを軍師に迎える思考法</a></li>
-            <li><a href="03.html">3. 個人が資本に勝つための戦略</a></li>
-            <li><a href="04.html">4. GitHub Pagesを選ぶ理由</a></li>
-            <li><a href="05.html">5. 継続を力に変える習慣術</a></li>
-            <li><a href="06.html">6. 静的サイトジェネレーターの優位性</a></li>
-            <li><a href="07.html">7. ドメインの選定とブランド構築</a></li>
-            <li><a href="08.html">8. サーバーレス運営のコストメリット</a></li>
-            <li><a href="09.html">9. Gitによるコンテンツ管理の初歩</a></li>
-            <li><a href="10.html">10. GitHub Pagesの爆速設定</a></li>
-            <li><a href="11.html">11. セキュリティとしての静的配信</a></li>
-            <li><a href="12.html">12. HTML/CSSのSEO最適化</a></li>
-            <li><a href="13.html">13. 表示速度が順位に与える影響</a></li>
-            <li><a href="14.html">14. レスポンシブデザインの必須条件</a></li>
-            <li><a href="15.html">15. モバイルファーストインデックス対応</a></li>
+            <li><a href="01.html">1. コンセプト：コスト0で最強のSEO資産を作る</a></li>
+            <li><a href="02.html">2. GitHub Pages：サーバー代0円の圧倒的メリット</a></li>
+            <li><a href="03.html">3. 独自ドメインの取得とCloudflareの魔法</a></li>
+            <li><a href="04.html">4. 静的サイトがSEOで最強である物理的な理由</a></li>
+            <li><a href="05.html">5. GitHubデスクトップで管理する一生消えない資産</a></li>
+            <li><a href="06.html">6. 爆速HTML/CSSテンプレートの構造解説</a></li>
+            <li><a href="07.html">7. セマンティックHTML：検索エンジンに好かれる書き方</a></li>
+            <li><a href="08.html">8. Googleアナリティクス4(GA4)の収益用設定</a></li>
+            <li><a href="09.html">9. サーチコンソール：検索意図を可視化する初期設定</a></li>
+            <li><a href="10.html">10. XMLサイトマップとrobots.txtの戦略的配置</a></li>
+            <li><a href="11.html">11. ファビコンとOGP設定：SNS拡散の土台作り</a></li>
+            <li><a href="12.html">12. モバイルファーストインデックスの完全攻略</a></li>
+            <li><a href="13.html">13. SSL化（HTTPS）とセキュリティの信頼性</a></li>
+            <li><a href="14.html">14. 構造化データ（JSON-LD）で検索結果を独占する</a></li>
+            <li><a href="15.html">15. 第1章まとめ：収益を生むための土台完成</a></li>
         </ul>
-
-        <div style="margin-top: 40px; text-align: center;">
-            <a href="index.html" style="color: #666; text-decoration: none; font-size: 0.9rem; border-bottom: 1px solid #ddd;">
-                他のカテゴリーの記事を読む（トップページへ戻る）
-            </a>
-        </div>
     </section>
 </main>
 
 <footer class="main-footer">
     <div class="container">
-        <div style="margin-bottom: 20px;">
-            <a href="hosting-comparison-guide.html" style="color: #bbb; text-decoration: none; font-size: 0.75rem;">
-                Webサイト構築における無料と有料の真実：GitHubからWordPressへの移行ガイド
-            </a>
-        </div>
         <p>&copy; 2026 Zero-Cost SEO - 星 友和</p>
     </div>
 </footer>
