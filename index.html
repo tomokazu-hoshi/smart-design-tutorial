@@ -10,9 +10,18 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zero-Cost SEO | 維持費0円で築く資産サイト100本ノック</title>
+    <title>Zero-Cost SEO | 100記事で築く資産サイトの全記録</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* トップページ専用の追加デザイン */
+        .category-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-top: 40px; }
+        .category-card-box { display: block; background: #fff; border: 2px solid #ddd; border-radius: 12px; padding: 25px; text-decoration: none; color: #333; transition: 0.3s; text-align: left; }
+        .category-card-box:hover { border-color: #f39c12; transform: translateY(-5px); box-shadow: 0 10px 30px rgba(0,0,0,0.08); }
+        .card-title { font-size: 1.2rem; margin-top: 0; color: #1a2a3a; border-bottom: 2px solid #f39c12; padding-bottom: 10px; }
+        .card-preview { list-style: none; padding: 15px 0; margin: 0; font-size: 0.85rem; color: #666; }
+        .range-text { font-weight: bold; color: #f39c12; }
+    </style>
 </head>
 <body>
 
@@ -24,48 +33,47 @@
 </header>
 
 <main class="container">
-    <section class="intro">
+    <section style="padding: 40px 0; text-align: center;">
         <h2>100本ノック、進行中。</h2>
         <p>カテゴリーを選択して、詳細な記事一覧をご覧ください。</p>
     </section>
 
     <div class="category-grid">
-        <a href="chapter1.html" class="category-card">
-            <h3>第1章</h3>
-            <p>ゼロコスト・爆速インフラ構築編</p>
-            <span class="status">全15記事・完了</span>
+        <a href="chapter1.html" class="category-card-box">
+            <h2 class="card-title">第1章：ゼロコスト・爆速インフラ構築編</h2>
+            <ul class="card-preview"><li>1. GitHub Pages×AIで作る「維持費0円」の資産サイト</li><li>2. AI軍師と共に戦略を練る：プロンプトエンジニアリング</li><li>3. 個人が資本に勝つためのランチェスター戦略</li><li>4. 爆速表示を実現する静的サイトの優位性</li><li class="range-text">5 〜 15</li></ul>
         </a>
-        <a href="chapter2.html" class="category-card">
-            <h3>第2章</h3>
-            <p>戦略・ジャンル選定編</p>
-            <span class="status">全15記事・完了</span>
+        <a href="chapter2.html" class="category-card-box">
+            <h2 class="card-title">第2章：AIコンテンツ・エンジニアリング編</h2>
+            <ul class="card-preview"><li>16. AIコンテンツ・エンジニアリングの極意</li><li>17. 読者の検索意図をAIで完璧に解読する</li><li>18. 心を動かすAIライティング：共感の設計図</li><li>19. ファクトチェック：AIの嘘を見抜く技術</li><li class="range-text">20 〜 35</li></ul>
         </a>
-        <a href="chapter3.html" class="category-card">
-            <h3>第3章</h3>
-            <p>AI執筆・コンテンツ制作編</p>
-            <span class="status">全20記事・完了</span>
+        <a href="chapter3.html" class="category-card-box">
+            <h2 class="card-title">第3章：マネタイズ・収益最大化戦略編</h2>
+            <ul class="card-preview"><li>36. マネタイズの設計図：コスト0から利益を生む仕組み</li><li>37. アフィリエイト案件の選び方：高単価と成約率の相関</li><li>38. Amazon・楽天アフィリエイト：物販で手堅く稼ぐ技術</li><li>39. ASP（アフィリエイト・サービス・プロバイダ）の戦略的活用</li><li class="range-text">40 〜 50</li></ul>
         </a>
-        <a href="chapter4.html" class="category-card">
-            <h3>第4章</h3>
-            <p>SEO・権威性(E-E-A-T)向上編</p>
-            <span class="status">全20記事・進行中</span>
+        <a href="chapter4.html" class="category-card-box">
+            <h2 class="card-title">第4章：E-E-A-Tと信頼性構築編</h2>
+            <ul class="card-preview"><li>51. E-E-A-Tとは：AI時代の検索エンジンが求める信頼の正体</li><li>52. 著者情報の拡充：AIに「あなた」という専門家を定義させる</li><li>53. 「経験(Experience)」の証明：AIが書けない実体験の盛り込み方</li><li>54. 専門性(Expertise)を高めるトピッククラスターの構築</li><li class="range-text">55 〜 65</li></ul>
         </a>
-        <a href="chapter5.html" class="category-card">
-            <h3>第5章</h3>
-            <p>収益化・資産自動化編</p>
-            <span class="status">全10記事・予定</span>
+        <a href="chapter5.html" class="category-card-box">
+            <h2 class="card-title">第5章：AIオートメーション・スケーリング編</h2>
+            <ul class="card-preview"><li>66. AIオートメーション：運用の自動化ロードマップ</li><li>67. Python×AIで記事を自動投稿する仕組み</li><li>68. 複数サイトを同時に育てるポートフォリオ戦略</li><li>69. AIエージェントによる自動リサーチとトレンドキャッチ</li><li class="range-text">70 〜 80</li></ul>
         </a>
-        <a href="chapter6.html" class="category-card">
-            <h3>第6章</h3>
-            <p>新時代の運営・未来戦略編</p>
-            <span class="status">全20記事・予定</span>
+        <a href="chapter6.html" class="category-card-box">
+            <h2 class="card-title">第6章：新時代のサイト運営・未来戦略編</h2>
+            <ul class="card-preview"><li>81. 新時代のサイト運営：10年先を見据えたビジョン</li><li>82. AI共生時代のSEOサバイバル術</li><li>83. サイトのブランド化とコミュニティ形成の重要性</li><li>84. 次世代の集客チャネル開拓：SEOの枠を超えて</li><li class="range-text">85 〜 100</li></ul>
         </a>
     </div>
 </main>
 
 <footer class="main-footer">
     <div class="container">
-        <p>&copy; 2026 Zero-Cost SEO - 星 友和</p>
+        <div style="margin-bottom: 20px;">
+            <a href="hosting-comparison-guide.html" style="color: #bbb; text-decoration: none; font-size: 0.85rem;">
+                Webサイト構築における無料と有料の真実：GitHubからWordPressへの移行ガイド
+            </a>
+        </div>
+        <p>&copy; 2026 Zero-Cost SEO - 星友和</p>
     </div>
 </footer>
 
