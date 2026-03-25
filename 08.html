@@ -10,7 +10,7 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>8. Googleアナリティクス4(GA4)の収益用設定 | Zero-Cost SEO</title>
+    <title>8. 独自ドメインの取得とGitHub Pagesへの紐付け | Zero-Cost SEO</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
 </head>
@@ -19,6 +19,7 @@
 <header class="main-header">
     <div class="container">
         <h1>Zero-Cost SEO</h1>
+        <p>技術とAIで、コストゼロの資産サイトを構築する</p>
     </div>
 </header>
 
@@ -26,16 +27,24 @@
     <a href="chapter1.html" class="back-link">← 第1章 目次へ戻る</a>
     
     <article class="post-content">
-        <h1>8. Googleアナリティクス4(GA4)の収益用設定</h1>
-        <p>「どれだけ読まれているか」だけを知っても、収益化は加速しません。Googleアナリティクス4（GA4）を単なるアクセス解析ツールとしてではなく、読者が「成約」に至るまでの行動を追跡する「収益最大化ツール」として設定しましょう。</p>
+        <h1>8. 独自ドメインの取得とGitHub Pagesへの紐付け</h1>
+        <p>GitHub Pagesが提供するデフォルトのURL（ユーザー名.github.io）でもサイト運営は可能ですが、長期的な「資産」としてサイトを育てるなら、独自ドメインの取得は必須です。独自ドメインを持つことで、万が一プラットフォームを移転することになっても、それまでに積み上げたSEO評価（リンク資産）を失わずに済みます。また、読者からの信頼性も飛躍的に向上します。</p>
 
         
 
-        <h2>イベント測定の「収益」への紐付け</h2>
-        <p>GA4の初期設定では、単なるページビューしか測定されません。Zero-Cost SEOでは、アフィリエイトリンクのクリックや、メルマガ登録フォームへの誘導など、収益に直結する行動を「イベント」として個別に設定します。AIにGA4の推奨イベントリストを分析させ、自分のサイトの収益構造に合ったカスタムイベントを定義することで、どの記事が最も「稼いでいるか」を正確に把握できるようになります。</p>
+        <h2>ドメイン取得の考え方と選び方</h2>
+        <p>ドメインは「お名前.com」や「バリュードメイン」、「Cloudflare」などのレジストラ（登録業者）で購入できます。選ぶ際のポイントは、サイトのテーマを連想させ、かつ覚えやすい短い名前にすることです。末尾（TLD）は、日本向けであれば「.jp」、汎用性なら「.com」や「.net」が安定していますが、近年は安価な「.xyz」なども普及しています。ただし、更新費用が極端に高いものもあるため、初年度だけでなく継続コストもAIに調査させてから決定しましょう。</p>
 
-        <h2>エンゲージメントを収益性の指標にする</h2>
-        <p>GA4で導入された「エンゲージメント」という概念は、読者がどれだけ真剣に記事を読んでいるかを示します。滞在時間やスクロール率を分析し、「よく読まれているが収益に繋がらない記事」と「アクセスは少ないが成約率が高い記事」を分類しましょう。このデータに基づき、AIと協力して記事の導線をリライトすることで、サイト全体の収益効率を最大化させることができます。計測されない努力は、資産としての改善に繋がりません。</p>
+        <h2>GitHub Pagesへの紐付け手順</h2>
+        <p>ドメインを入手したら、GitHub Pagesの設定画面（Settings > Pages）にある「Custom domain」欄に自分のドメインを入力します。しかし、これだけでは繋がりません。ドメインを購入した側の管理画面で「DNS設定」を行う必要があります。主に以下の2つの設定が一般的です。</p>
+        <ul>
+            <li><strong>CNAMEレコード:</strong> <code>www.あなたのドメイン</code> を <code>ユーザー名.github.io</code> に向ける設定。</li>
+            <li><strong>Aレコード:</strong> 独自ドメインそのもの（ネイキッドドメイン）を使用する場合、GitHubが指定する4つのIPアドレスを設定。</li>
+        </ul>
+
+        
+
+        <p>設定が反映（浸透）するまでには数時間から最大24時間程度かかることがありますが、正しく紐付くと、あなた専用の「Web上の住所」で世界最速レベルの静的サイトが公開されます。次はこの住所の安全性を保証する「SSL化」について確認していきましょう。</p>
     </article>
 
     <nav class="post-nav" style="display: flex; justify-content: space-between; margin: 40px 0; padding-top: 20px; border-top: 1px solid #eee;">
@@ -44,30 +53,36 @@
     </nav>
 
     <section class="article-footer-nav">
-        <h3>同じカテゴリー（第1章：インフラ構築編）の記事</h3>
+        <h3>同じカテゴリー（第1章：ゼロコスト・爆速インフラ構築編）の記事</h3>
         <ul class="vertical-article-list">
-            <li><a href="01.html">1. コンセプト：コスト0で最強のSEO資産を作る</a></li>
-            <li><a href="02.html">2. GitHub Pages：サーバー代0円の圧倒的メリット</a></li>
-            <li><a href="03.html">3. 独自ドメインの取得とCloudflareの魔法</a></li>
-            <li><a href="04.html">4. 静的サイトがSEOで最強である物理的な理由</a></li>
-            <li><a href="05.html">5. GitHubデスクトップで管理する一生消えない資産</a></li>
-            <li><a href="06.html">6. 爆速HTML/CSSテンプレートの構造解説</a></li>
-            <li><a href="07.html">7. セマンティックHTML：検索エンジンに好かれる書き方</a></li>
-            <li><a href="08.html">8. Googleアナリティクス4(GA4)の収益用設定</a></li>
-            <li><a href="09.html">9. サーチコンソール：検索意図を可視化する初期設定</a></li>
-            <li><a href="10.html">10. XMLサイトマップとrobots.txtの戦略的配置</a></li>
-            <li><a href="11.html">11. ファビコンとOGP設定：SNS拡散の土台作り</a></li>
-            <li><a href="12.html">12. モバイルファーストインデックスの完全攻略</a></li>
-            <li><a href="13.html">13. SSL化（HTTPS）とセキュリティの信頼性</a></li>
-            <li><a href="14.html">14. 構造化データ（JSON-LD）で検索結果を独占する</a></li>
-            <li><a href="15.html">15. 第1章まとめ：収益を生むための土台完成</a></li>
+            <li><a href="01.html">1. GitHub Pages×AIで作る「維持費0円」の資産サイト</a></li>
+            <li><a href="02.html">2. AI軍師と共に戦略を練る：プロンプトエンジニアリング</a></li>
+            <li><a href="03.html">3. 個人が資本に勝つためのランチェスター戦略</a></li>
+            <li><a href="04.html">4. 爆速表示を実現する静的サイトの優位性</a></li>
+            <li><a href="05.html">5. GitHubアカウントの作成とリポジトリの設定</a></li>
+            <li><a href="06.html">6. ローカル環境の構築：VS CodeとGitの連携</a></li>
+            <li><a href="07.html">7. HTML5/CSS3の基本構造：SEOに強いコードの書き方</a></li>
+            <li><a href="08.html">8. 独自ドメインの取得とGitHub Pagesへの紐付け</a></li>
+            <li><a href="09.html">9. SSL化の確認とセキュリティ設定の基本</a></li>
+            <li><a href="10.html">10. AIを活用したサイトマップとディレクトリ設計</a></li>
+            <li><a href="11.html">11. 内部リンク構造の最適化：クローラビリティを高める</a></li>
+            <li><a href="12.html">12. サイトデザインの基本：ユーザビリティと表示速度の両立</a></li>
+            <li><a href="13.html">13. Google Search Consoleへの登録と初期設定</a></li>
+            <li><a href="14.html">14. Google Analytics 4 (GA4) によるデータ計測の開始</a></li>
+            <li><a href="15.html">15. 第1章まとめ：インフラ構築が資産サイトの命運を握る</a></li>
         </ul>
+
+        <div style="margin-top: 40px; text-align: center;">
+            <a href="index.html" style="color: #666; text-decoration: none; font-size: 0.9rem; border-bottom: 1px solid #ddd;">
+                他のカテゴリーの記事を読む（トップページへ戻る）
+            </a>
+        </div>
     </section>
 </main>
 
 <footer class="main-footer">
     <div class="container">
-        <p>&copy; 2026 Zero-Cost SEO</p>
+        <p>&copy; 2026 Zero-Cost SEO - 星 友和</p>
     </div>
 </footer>
 
