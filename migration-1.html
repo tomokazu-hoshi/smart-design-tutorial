@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H56XHD5MLW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-H56XHD5MLW');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1. GitHub Pagesの限界とWordPressの優位性 | WordPress移行ガイド</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body { background-color: #f0f7ff; color: #333; line-height: 1.6; }
+        .container { max-width: 600px; margin: 0 auto; padding: 20px; }
+        
+        /* 1. パンくず・メニューリンク */
+        .top-nav-link { display: block; margin-bottom: 15px; text-decoration: none; color: #3498db; font-size: 0.85rem; font-weight: bold; }
+
+        /* 2. 章のタイトルと説明 */
+        .chapter-intro-box { background: #3498db; color: white; padding: 20px; border-radius: 12px; margin-bottom: 30px; box-shadow: 0 4px 10px rgba(52, 152, 219, 0.2); }
+        .chapter-intro-box small { font-size: 0.75rem; opacity: 0.9; display: block; margin-bottom: 5px; }
+        .chapter-intro-box h2 { font-size: 1.2rem; margin: 0; }
+        .chapter-intro-box p { font-size: 0.85rem; margin-top: 10px; opacity: 0.95; line-height: 1.4; }
+
+        /* 3. 記事本文 */
+        .post-content { background: white; padding: 25px 20px; border-radius: 12px; margin-bottom: 30px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+        .post-content h1 { font-size: 1.4rem; color: #2c3e50; margin-bottom: 20px; border-bottom: 3px solid #f0f7ff; padding-bottom: 10px; }
+        .post-content h3 { font-size: 1.1rem; color: #3498db; margin: 25px 0 10px; }
+        .post-content p { margin-bottom: 15px; font-size: 0.95rem; }
+        .post-content ul { margin-bottom: 20px; padding-left: 20px; }
+        .post-content li { margin-bottom: 8px; font-size: 0.9rem; }
+
+        /* アクションBOX */
+        .action-box { background: #fff9db; border: 1px solid #f59f00; padding: 15px; border-radius: 8px; margin: 25px 0; }
+        .action-box strong { color: #e67e22; display: block; margin-bottom: 5px; font-size: 0.9rem; }
+        .action-box p { font-size: 0.85rem; margin: 0; color: #666; }
+
+        /* 4. 前へ・次へボタン */
+        .post-nav-buttons { display: flex; gap: 10px; margin-bottom: 40px; }
+        .btn-nav { flex: 1; text-align: center; padding: 15px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 0.9rem; transition: opacity 0.2s; }
+        .btn-prev { background: #e1e8ed; color: #7f8c8d; }
+        .btn-next { background: #3498db; color: white; }
+
+        /* 5. 章の記事リスト（カード方式） */
+        .mini-card-list { margin-top: 30px; }
+        .mini-card-list h3 { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 15px; }
+        .mini-card { display: flex; align-items: center; background: white; border: 1px solid #e1e8ed; padding: 12px 15px; border-radius: 8px; text-decoration: none; color: #333; margin-bottom: 10px; font-size: 0.85rem; }
+        .mini-card span { color: #3498db; font-weight: bold; margin-right: 10px; }
+        .mini-card.current { border: 2px solid #3498db; background: #f0faff; }
+
+        /* 6. 目次へ戻るリンク */
+        .footer-nav { text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #ddd; }
+        .footer-nav a { color: #3498db; font-weight: bold; text-decoration: none; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+<main class="container">
+    <a href="migration-guide.html" class="top-nav-link">← WordPress移行ガイド メニュー</a>
+
+    <section class="chapter-intro-box">
+        <small>第1章：移行の決断と戦略編</small>
+        <h2>移行の第一歩：なぜGitHubから羽ばたくのか</h2>
+        <p>100記事の資産を築いた今、あなたは次のステージへ進む準備ができています。無料の限界を知ることは、収益を最大化するための戦略的な決断です。</p>
+    </section>
+
+    <article class="post-content">
+        <h1>1. GitHub Pagesの限界とWordPressの優位性</h1>
+        <p>Zero-Cost SEOで構築してきたGitHub Pagesは、維持費0円で爆速という、初期段階では最強の武器でした。しかし、サイトが100記事を超え、ビジネスとして本格化するにつれ、いくつかの「壁」が見えてきます。</p>
+        
+        <h3>静的サイトの限界：機能の拡張性</h3>
+        <p>GitHub Pagesは「静的」なサイトです。つまり、データベースを持ちません。そのため、読者からのコメント機能、サイト内検索、会員限定コンテンツといった「動的」な機能を組み込むには、常に外部サービスを頼る必要があります。WordPressなら、これらの機能はプラグイン一つで完結します。</p>
+
+        <h3>管理工数の増大</h3>
+        <p>記事が増えるほど、サイト全体の整合性を保つためのHTML編集やデプロイ作業の「手間」が増えていきます。個人で1つ、2つのサイトなら問題ありませんが、さらにスケーリング（拡大）を目指す場合、この管理工数があなたの貴重な時間を奪うボトルネックになります。</p>
+
+        <h3>WordPressという「レバレッジ」</h3>
+        <p>WordPressへ移行する最大のメリットは、世界中の開発者が作った「知恵（プラグインやテーマ）」を即座に利用できることです。SEO最適化、広告配信の自動化、ABテスト。これらを自力でコーディングする時間を、あなたは「新しい戦略」を練る時間に充てることができるようになります。</p>
+
+        <div class="action-box">
+            <strong>💡 この記事のあとのアクション：</strong>
+            <p>現在の自分のサイト運用に、どれくらい「手作業の時間」がかかっているか書き出してみましょう。その時間を0にすることが移行の目的です。</p>
+        </div>
+    </article>
+
+    <nav class="post-nav-buttons">
+        <span class="btn-nav btn-prev" style="opacity: 0.5;">← 前の記事なし</span>
+        <a href="migration-2.html" class="btn-nav btn-next">次の記事へ →</a>
+    </nav>
+
+    <section class="mini-card-list">
+        <h3>第1章：記事一覧</h3>
+        <a href="migration-1.html" class="mini-card current"><span>1</span> GitHub Pagesの限界とWordPressの優位性</a>
+        <a href="migration-2.html" class="mini-card"><span>2</span> 「自分の時間」を「お金」で買う：レバレッジの考え方</a>
+        <a href="migration-3.html" class="mini-card"><span>3</span> 移行すべき数値基準：PV数と収益性のデッドライン</a>
+        <a href="migration-4.html" class="mini-card"><span>4</span> WordPress移行で得られる3つの武器</a>
+    </section>
+
+    <div class="footer-nav">
+        <a href="migration-guide.html">← WordPress移行ガイド目次へ戻る</a>
+    </div>
+</main>
+
+<footer style="text-align: center; padding: 40px 0; color: #999; font-size: 0.8rem;">
+    <p>&copy; 2026 Zero-Cost SEO - 星 友和</p>
+</footer>
+
+</body>
+</html>
