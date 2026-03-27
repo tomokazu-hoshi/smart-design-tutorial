@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H56XHD5MLW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-H56XHD5MLW');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>13. GitHubのMarkdown/HTMLファイルをWordPressへインポートする方法 | WordPress移行ガイド</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body { background-color: #f0f7ff; color: #333; line-height: 1.6; }
+        .container { max-width: 600px; margin: 0 auto; padding: 20px; }
+        
+        /* 1. パンくずリスト */
+        .breadcrumb { font-size: 0.8rem; margin-bottom: 20px; color: #7f8c8d; }
+        .breadcrumb a { text-decoration: none; color: #3498db; }
+
+        /* 2. 章のタイトルと説明 */
+        .chapter-intro-mini { background: #3498db; color: white; padding: 20px; border-radius: 12px; margin-bottom: 25px; }
+        .chapter-intro-mini small { font-size: 0.75rem; opacity: 0.9; }
+        .chapter-intro-mini h2 { font-size: 1.1rem; margin: 5px 0; }
+        .chapter-intro-mini p { font-size: 0.85rem; opacity: 0.9; margin-top: 5px; }
+
+        /* 3. 記事コンテンツ */
+        .post-content { background: white; padding: 25px 20px; border-radius: 12px; margin-bottom: 30px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+        .post-content h1 { font-size: 1.3rem; color: #2c3e50; margin-bottom: 20px; border-bottom: 3px solid #f0f7ff; padding-bottom: 10px; }
+        .post-content h3 { font-size: 1.05rem; color: #3498db; margin: 25px 0 10px; border-left: 4px solid #3498db; padding-left: 10px; }
+        .post-content p { margin-bottom: 15px; font-size: 0.95rem; }
+        
+        /* アクションBOX */
+        .action-box { background: #e1f5fe; border: 1px solid #b3e5fc; padding: 15px; border-radius: 8px; margin: 20px 0; }
+        .action-box strong { color: #0288d1; display: block; margin-bottom: 5px; }
+
+        /* 4. ナビボタン */
+        .post-nav-buttons { display: flex; gap: 10px; margin-bottom: 40px; }
+        .btn-nav { flex: 1; text-align: center; padding: 15px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 0.9rem; }
+        .btn-prev { background: #eee; color: #666; }
+        .btn-next { background: #3498db; color: white; }
+
+        /* 5. 章内リスト（カード方式） */
+        .chapter-list-mini { margin-top: 30px; }
+        .chapter-list-mini h3 { font-size: 0.9rem; margin-bottom: 15px; color: #7f8c8d; }
+        .mini-card { display: flex; align-items: center; background: white; border: 1px solid #e1e8ed; padding: 12px 15px; border-radius: 8px; text-decoration: none; color: #333; margin-bottom: 10px; font-size: 0.85rem; }
+        .mini-card span { color: #3498db; font-weight: bold; margin-right: 10px; }
+        .mini-card.current { border: 2px solid #3498db; background: #f0faff; }
+
+        /* 6. 下部メニューリンク */
+        .footer-menu-link { text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #ddd; }
+        .footer-menu-link a { color: #3498db; font-weight: bold; text-decoration: none; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+<main class="container">
+    <nav class="breadcrumb">
+        <a href="index.html">TOP</a> ＞ 
+        <a href="migration-guide.html">移行ガイド</a> ＞ 
+        <a href="migration-ch4.html">第4章</a>
+    </nav>
+
+    <section class="chapter-intro-mini">
+        <small>第4章：コンテンツ移行編</small>
+        <h2>GitHubのMarkdown/HTMLファイルをWordPressへインポートする方法</h2>
+        <p>100記事のデータを手動でコピペするのは非効率です。ツールを使って一括でインポートする技を学びます。</p>
+    </section>
+
+    <article class="post-content">
+        <h1>13. GitHubのMarkdown/HTMLファイルをWordPressへインポートする方法</h1>
+        <p>GitHubリポジトリで管理しているコンテンツをWordPressに移す際、最も重要なのは「構造を崩さずに流し込むこと」です。GitHub PagesではMarkdownや素のHTMLで書かれていた記事を、WordPressの「投稿」データとして一括処理する手法を解説します。</p>
+        
+        <h3>1. 標準インポーター（RSS形式）の活用</h3>
+        <p>最も確実な方法の一つは、GitHub Pagesのサイトから生成されるRSSフィードを利用することです。WordPress標準の「RSSインポーター」を使えば、タイトル、本文、日付を自動で取り込むことができます。ただし、画像パスの調整が後から必要になる場合があります。</p>
+
+        <h3>2. プラグイン「WP All Import」による一括インポート</h3>
+        <p>より高度な移行を行うなら「WP All Import」というプラグインが最強です。GitHubからダウンロードしたHTMLファイルやCSVファイルを、WordPressのカスタムフィールドやカテゴリー、タグに至るまで正確にマッピングして取り込めます。100記事以上の移行にはこの方法が最も推奨されます。</p>
+
+        <h3>3. Markdownからの直接変換</h3>
+        <p>もし記事をMarkdown（.md）形式で管理しているなら、JetpackプラグインのMarkdown機能や、専用の「Markdown Importer」を使用することで、HTMLに変換される前の綺麗な構造のままインポートが可能です。</p>
+
+        <h3>インポート時の注意点</h3>
+        <p>一括インポートを行う前に、必ず数記事だけで「テストインポート」を行ってください。見出し（H2, H3）の階層が崩れていないか、文字化けがないかをチェックしてから全件実行するのがプロの鉄則です。</p>
+
+        <div class="action-box">
+            <strong style="color: #0288d1;">💡 この記事のあとのステップ：</strong>
+            <p style="font-size: 0.85rem; margin-top: 5px;">GitHubから現在の全記事データを一つのフォルダにダウンロードし、ファイル形式（HTMLかMDか）を確認しておきましょう。</p>
+        </div>
+    </article>
+
+    <nav class="post-nav-buttons">
+        <a href="migration-12.html" class="btn-nav btn-prev">← 前へ</a>
+        <a href="migration-14.html" class="btn-nav btn-next">次へ →</a>
+    </nav>
+
+    <section class="chapter-list-mini">
+        <h3 style="font-size: 0.9rem; margin-bottom: 15px; color: #7f8c8d;">第4章：記事一覧</h3>
+        <div class="card-list">
+            <a href="migration-13.html" class="mini-card current"><span>13</span> Markdown/HTMLインポート術</a>
+            <a href="migration-14.html" class="mini-card"><span>14</span> 画像素材の一括アップロードと最適化</a>
+            <a href="migration-15.html" class="mini-card"><span>15</span> アイキャッチとメタ情報の再設定</a>
+            <a href="migration-16.html" class="mini-card"><span>16</span> AIによる全ページ自動表示チェック</a>
+        </div>
+    </section>
+
+    <div class="footer-menu-link">
+        <a href="migration-guide.html">
+            ← WordPress移行ガイド目次へ戻る
+        </a>
+    </div>
+</main>
+
+<footer style="text-align: center; padding: 40px 0; color: #999; font-size: 0.8rem;">
+    <p>&copy; 2026 Zero-Cost SEO - 星 友和</p>
+</footer>
+
+</body>
+</html>
