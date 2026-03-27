@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H56XHD5MLW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-H56XHD5MLW');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>22. AIによる順位監視とリカバリー技術 | WordPress移行ガイド</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body { background-color: #f0f7ff; color: #333; line-height: 1.6; }
+        .container { max-width: 600px; margin: 0 auto; padding: 20px; }
+        
+        /* 1. パンくずリスト */
+        .breadcrumb { font-size: 0.8rem; margin-bottom: 20px; color: #7f8c8d; }
+        .breadcrumb a { text-decoration: none; color: #3498db; }
+
+        /* 2. 章のタイトルと説明 */
+        .chapter-intro-mini { background: #3498db; color: white; padding: 20px; border-radius: 12px; margin-bottom: 25px; }
+        .chapter-intro-mini small { font-size: 0.75rem; opacity: 0.9; }
+        .chapter-intro-mini h2 { font-size: 1.1rem; margin: 5px 0; }
+        .chapter-intro-mini p { font-size: 0.85rem; opacity: 0.9; margin-top: 5px; }
+
+        /* 3. 記事コンテンツ */
+        .post-content { background: white; padding: 25px 20px; border-radius: 12px; margin-bottom: 30px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+        .post-content h1 { font-size: 1.3rem; color: #2c3e50; margin-bottom: 20px; border-bottom: 3px solid #f0f7ff; padding-bottom: 10px; }
+        .post-content h3 { font-size: 1.05rem; color: #3498db; margin: 25px 0 10px; border-left: 4px solid #3498db; padding-left: 10px; }
+        .post-content p { margin-bottom: 15px; font-size: 0.95rem; }
+        
+        /* アクションBOX */
+        .action-box { background: #e1f5fe; border: 1px solid #b3e5fc; padding: 15px; border-radius: 8px; margin: 20px 0; }
+        .action-box strong { color: #0288d1; display: block; margin-bottom: 5px; }
+
+        /* 4. ナビボタン */
+        .post-nav-buttons { display: flex; gap: 10px; margin-bottom: 40px; }
+        .btn-nav { flex: 1; text-align: center; padding: 15px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 0.9rem; }
+        .btn-prev { background: #eee; color: #666; }
+        .btn-next { background: #3498db; color: white; }
+
+        /* 5. 章内リスト（カード方式） */
+        .chapter-list-mini { margin-top: 30px; }
+        .chapter-list-mini h3 { font-size: 0.9rem; margin-bottom: 15px; color: #7f8c8d; }
+        .mini-card { display: flex; align-items: center; background: white; border: 1px solid #e1e8ed; padding: 12px 15px; border-radius: 8px; text-decoration: none; color: #333; margin-bottom: 10px; font-size: 0.85rem; }
+        .mini-card span { color: #3498db; font-weight: bold; margin-right: 10px; }
+        .mini-card.current { border: 2px solid #3498db; background: #f0faff; }
+
+        /* 6. 下部目次リンク */
+        .footer-back-link { text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #ddd; }
+        .footer-back-link a { color: #3498db; font-weight: bold; text-decoration: none; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+<main class="container">
+    <nav class="breadcrumb">
+        <a href="index.html">TOP</a> ＞ 
+        <a href="migration-guide.html">移行ガイド</a> ＞ 
+        <a href="migration-ch6.html">第6章</a>
+    </nav>
+
+    <section class="chapter-intro-mini">
+        <small>第6章：移行後の再成長編</small>
+        <h2>AIによる順位監視とリカバリー技術</h2>
+        <p>移行直後のわずかな順位変動を見逃さない。AIを「軍師」として、検索順位の安定化を図ります。</p>
+    </section>
+
+    <article class="post-content">
+        <h1>22. AIによる順位監視とリカバリー技術</h1>
+        <p>WordPressへの移行完了後、1〜2週間は検索順位が激しく上下することがあります。これはGoogleが「新しいURL構造」と「サイトの信頼性」を再評価している期間です。この変動期を乗り切り、もし順位が下がった場合に素早く手を打つためのAI活用術を解説します。</p>
+        
+        <h3>1. 順位計測ツールとAIの連携</h3>
+        <p>まずは「GRC」や「Nobilista」などのツールで主要キーワードの順位を毎日記録しましょう。順位が大きく動いた際、その変動データをAI（Gemini）に渡し、「この変動はアルゴリズムの影響か、それとも移行による技術的エラーの可能性が高いか？」を分析させます。</p>
+
+        <h3>2. 順位が落ちた記事の「差分チェック」</h3>
+        <p>もし特定の記事の順位が急落した場合、AIを使って「GitHub時代のHTMLソース」と「現在のWordPressのHTMLソース」を比較させます。「メタタグの記述が漏れていないか」「見出し（Hタグ）の順番が変わっていないか」を一瞬で特定し、原因を突き止めます。</p>
+
+        <h3>3. AIによる「リライト案」の即時生成</h3>
+        <p>原因が技術的なものではなく、コンテンツの鮮度にあると判断された場合、最新の検索意図に基づいたリライト案をAIに作成させます。移行によって「編集しやすくなった」WordPressの利点を活かし、即座に記事をアップデートすることで順位の回復を早めます。</p>
+
+        <h3>4. 「インデックス未登録」への自動対処</h3>
+        <p>移行後にGoogleに認識されていないページがないか、Search ConsoleのデータをAIでスキャンします。未登録のページが見つかれば、内部リンクの構造を見直したり、AIで作成した新しい導入文を添えて再リクエストを送るなどの対策を講じます。</p>
+
+        <div class="action-box">
+            <strong>💡 この記事のあとのステップ：</strong>
+            <p style="font-size: 0.85rem; margin-top: 5px;">主要なキーワード10個を順位計測ツールに登録し、明日からの変動をAIで分析できる体制を整えましょう。</p>
+        </div>
+    </article>
+
+    <nav class="post-nav-buttons">
+        <a href="migration-21.html" class="btn-nav btn-prev">← 前へ</a>
+        <a href="migration-23.html" class="btn-nav btn-next">次へ →</a>
+    </nav>
+
+    <section class="chapter-list-mini">
+        <h3 style="font-size: 0.9rem; margin-bottom: 15px; color: #7f8c8d;">第6章：記事一覧</h3>
+        <div class="card-list">
+            <a href="migration-21.html" class="mini-card"><span>21</span> GSCアドレス変更申請と再クロール</a>
+            <a href="migration-22.html" class="mini-card current"><span>22</span> AIによる順位監視とリカバリー技術</a>
+            <a href="migration-23.html" class="mini-card"><span>23</span> 指名検索の強化とブランディング</a>
+            <a href="migration-24.html" class="mini-card"><span>24</span> 終わりに：資産を「事業」へ進化させる</a>
+        </div>
+    </section>
+
+    <div class="footer-back-link">
+        <a href="migration-guide.html">
+            ← WordPress移行ガイド目次へ戻る
+        </a>
+    </div>
+</main>
+
+<footer style="text-align: center; padding: 40px 0; color: #999; font-size: 0.8rem;">
+    <p>&copy; 2026 Zero-Cost SEO - 星 友和</p>
+</footer>
+
+</body>
+</html>
