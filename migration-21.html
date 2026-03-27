@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H56XHD5MLW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-H56XHD5MLW');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>21. Google Search Consoleでの「アドレス変更」申請 | WordPress移行ガイド</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body { background-color: #f0f7ff; color: #333; line-height: 1.6; }
+        .container { max-width: 600px; margin: 0 auto; padding: 20px; }
+        
+        /* 1. パンくずリスト */
+        .breadcrumb { font-size: 0.8rem; margin-bottom: 20px; color: #7f8c8d; }
+        .breadcrumb a { text-decoration: none; color: #3498db; }
+
+        /* 2. 章のタイトルと説明 */
+        .chapter-intro-mini { background: #3498db; color: white; padding: 20px; border-radius: 12px; margin-bottom: 25px; }
+        .chapter-intro-mini small { font-size: 0.75rem; opacity: 0.9; }
+        .chapter-intro-mini h2 { font-size: 1.1rem; margin: 5px 0; }
+        .chapter-intro-mini p { font-size: 0.85rem; opacity: 0.9; margin-top: 5px; }
+
+        /* 3. 記事コンテンツ */
+        .post-content { background: white; padding: 25px 20px; border-radius: 12px; margin-bottom: 30px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+        .post-content h1 { font-size: 1.3rem; color: #2c3e50; margin-bottom: 20px; border-bottom: 3px solid #f0f7ff; padding-bottom: 10px; }
+        .post-content h3 { font-size: 1.05rem; color: #3498db; margin: 25px 0 10px; border-left: 4px solid #3498db; padding-left: 10px; }
+        .post-content p { margin-bottom: 15px; font-size: 0.95rem; }
+        
+        /* アクションBOX */
+        .action-box { background: #e1f5fe; border: 1px solid #b3e5fc; padding: 15px; border-radius: 8px; margin: 20px 0; }
+        .action-box strong { color: #0288d1; display: block; margin-bottom: 5px; }
+
+        /* 4. ナビボタン */
+        .post-nav-buttons { display: flex; gap: 10px; margin-bottom: 40px; }
+        .btn-nav { flex: 1; text-align: center; padding: 15px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 0.9rem; }
+        .btn-prev { background: #eee; color: #666; }
+        .btn-next { background: #3498db; color: white; }
+
+        /* 5. 章内リスト（カード方式） */
+        .chapter-list-mini { margin-top: 30px; }
+        .chapter-list-mini h3 { font-size: 0.9rem; margin-bottom: 15px; color: #7f8c8d; }
+        .mini-card { display: flex; align-items: center; background: white; border: 1px solid #e1e8ed; padding: 12px 15px; border-radius: 8px; text-decoration: none; color: #333; margin-bottom: 10px; font-size: 0.85rem; }
+        .mini-card span { color: #3498db; font-weight: bold; margin-right: 10px; }
+        .mini-card.current { border: 2px solid #3498db; background: #f0faff; }
+
+        /* 6. 下部目次リンク */
+        .footer-back-link { text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #ddd; }
+        .footer-back-link a { color: #3498db; font-weight: bold; text-decoration: none; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+<main class="container">
+    <nav class="breadcrumb">
+        <a href="index.html">TOP</a> ＞ 
+        <a href="migration-guide.html">移行ガイド</a> ＞ 
+        <a href="migration-ch6.html">第6章</a>
+    </nav>
+
+    <section class="chapter-intro-mini">
+        <small>第6章：移行後の再成長編</small>
+        <h2>Google Search Consoleでの「アドレス変更」申請</h2>
+        <p>引っ越し作業の総仕上げ。Googleに対して、サイトが新天地で再始動したことを正式に通知しましょう。</p>
+    </section>
+
+    <article class="post-content">
+        <h1>21. Google Search Consoleでの「アドレス変更」申請と再クロール促進</h1>
+        <p>301リダイレクトを設定しただけでは、Googleがサイトの移転を完全に認識するまでにある程度の時間がかかります。これを加速させ、SEO評価を確実に引き継ぐためのツールが、Google Search Consoleの「アドレス変更」申請です。</p>
+        
+        <h3>1. アドレス変更ツールの実行</h3>
+        <p>Search Consoleの「設定 ＞ アドレス変更」から申請を行います。これにより、Googleは古いURLと新しいURLの紐付けを優先的に処理するようになります。※ドメインが変わらない場合でも、大規模なURL構造変更を行った際は、新しいXMLサイトマップの送信がこの代わりを担います。</p>
+
+        <h3>2. XMLサイトマップの再送信</h3>
+        <p>WordPressには「XML Sitemaps」などのプラグインを導入し、新しいURL構造に基づいたサイトマップを生成させましょう。これをSearch Consoleに登録することで、Googleのクローラーが新しいサイト内を隅々まで巡回（クロール）し、インデックスを更新してくれます。</p>
+
+        <h3>3. 優先度の高いページの「インデックス登録リクエスト」</h3>
+        <p>特にアクセスが多い主要な10〜20記事については、Search ConsoleのURL検査ツールを使い、1ページずつ手動で「インデックス登録をリクエスト」しましょう。これにより、数日以内に検索結果のURLが新しい形式へ切り替わることが期待できます。</p>
+
+        <h3>4. 古いサイトマップの削除</h3>
+        <p>Googleが古いHTMLベースの構造を引きずらないよう、旧サイトで使用していたサイトマップの登録は解除しておきましょう。新しいWordPressの地図（サイトマップ）だけを信じてもらう環境を作ることが大切です。</p>
+
+        <div class="action-box">
+            <strong>💡 この記事のあとのステップ：</strong>
+            <p style="font-size: 0.85rem; margin-top: 5px;">Search Consoleにログインし、新しいXMLサイトマップ（通常は sitemap.xml）が「成功しました」というステータスになっているか確認しましょう。</p>
+        </div>
+    </article>
+
+    <nav class="post-nav-buttons">
+        <a href="migration-20.html" class="btn-nav btn-prev">← 前へ</a>
+        <a href="migration-22.html" class="btn-nav btn-next">次へ →</a>
+    </nav>
+
+    <section class="chapter-list-mini">
+        <h3 style="font-size: 0.9rem; margin-bottom: 15px; color: #7f8c8d;">第6章：記事一覧</h3>
+        <div class="card-list">
+            <a href="migration-21.html" class="mini-card current"><span>21</span> GSCアドレス変更申請と再クロール</a>
+            <a href="migration-22.html" class="mini-card"><span>22</span> AIによる順位監視とリカバリー技術</a>
+            <a href="migration-23.html" class="mini-card"><span>23</span> 指名検索の強化とブランディング</a>
+            <a href="migration-24.html" class="mini-card"><span>24</span> 終わりに：資産を「事業」へ進化させる</a>
+        </div>
+    </section>
+
+    <div class="footer-back-link">
+        <a href="migration-guide.html">
+            ← WordPress移行ガイド目次へ戻る
+        </a>
+    </div>
+</main>
+
+<footer style="text-align: center; padding: 40px 0; color: #999; font-size: 0.8rem;">
+    <p>&copy; 2026 Zero-Cost SEO - 星 友和</p>
+</footer>
+
+</body>
+</html>
