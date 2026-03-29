@@ -30,23 +30,24 @@
     
     <article class="post-content">
         <h1>14. Google Analytics 4 (GA4) によるデータ計測の開始</h1>
-        <p>サーチコンソールが「検索結果での動き」を見るツールなら、Google Analytics 4（GA4）は「サイトに訪れた後の動き」を分析するツールです。読者がどのページから流入し、どれくらいの時間滞在し、どのボタンをクリックしたのか。これらの行動データを把握することで、あなたのサイトは単なる情報の集積地から、収益を生み出す「洗練された資産」へと進化します。</p>
+        <p>サーチコンソールが「検索結果での動き」を見るツールなら、Google Analytics 4（GA4）は「サイトに訪れた後の動き」を分析するツールです。読者がどのページから流入し、どれくらいの時間滞在し、どのボタンをクリックしたのか。これらの行動データを把握することで、あなたのサイトは洗練された収益資産へと進化します。</p>
 
         <div style="background-color: #fff9db; border: 2px dashed #f39c12; padding: 20px; margin: 30px 0; border-radius: 8px;">
             <h3 style="margin-top: 0; color: #e67e22;">🚀 この記事のあとの作業工程</h3>
             <ol style="line-height: 1.8; font-size: 0.95rem;">
-                <li><strong>GA4プロパティを作成し「測定ID」を取得する</strong></li>
-                <li><strong>HTMLのhead内にトラッキングコードを埋め込む</strong></li>
+                <li><strong>GA4プロパティを作成して「測定ID」を取得する</strong><br>
+                    → <a href="https://analytics.google.com/analytics/web/" target="_blank" rel="noopener">Google Analytics公式（外部リンク）</a></li>
+                <li><strong>HTMLのhead内にトラッキングコード（gtag.js）を埋め込む</strong></li>
                 <li><strong>リアルタイムレポートで計測が正常に行われているか確認する</strong></li>
                 <li><strong>第15回「第1章まとめ」へ進む</strong></li>
             </ol>
         </div>
 
         <h2>ユーザーの「体験」を数値化する</h2>
-        <p>GA4は、従来のアクセス解析よりも「ユーザーの行動（イベント）」を重視した設計になっています。読者が記事を最後までスクロールしたか、アフィリエイトリンクをクリックしたかといった動きを詳細に追跡できます。このデータをAI軍師に渡して分析させることで、「離脱率が高い原因は何か？」「成約率を上げるための改善案は？」といった高度な戦略を、根拠のある数字に基づいて導き出せるようになります。</p>
+        <p>GA4は、読者が記事を最後までスクロールしたか、アフィリエイトリンクをクリックしたかといった動きを詳細に追跡できます。このデータをAI軍師に渡して分析させることで、「離脱率が高い原因は何か？」「成約率を上げるための改善案は？」といった高度な戦略を、数字に基づいて導き出せるようになります。直感ではなくデータで語るサイト運営をここから始めましょう。</p>
 
-        <h2>プライバシーへの配慮と正確な運用</h2>
-        <p>計測を開始するにあたって、Cookieの扱いなどのプライバシー設定も重要です。GitHub Pagesで運用する場合、サーバーサイドの複雑な処理は不要ですが、正しいスクリプトの配置が必要です。GA4とSearch Consoleを連携させることで、検索データと行動データを一元管理し、サイトの全体像を把握できる最強のダッシュボードを完成させましょう。</p>
+        <h2>GA4とSearch Consoleの連携</h2>
+        <p>GA4単体でも強力ですが、Search Consoleと連携させることで、検索キーワードとサイト内行動を一元管理できるようになります。GitHub Pagesで運用する場合、サーバーサイドの処理がないため、このクライアントサイドの計測設定が唯一の分析手段となります。初期設定を確実に済ませ、サイトの全体像を把握できるダッシュボードを完成させましょう。</p>
 
         <div style="margin: 30px 0; padding: 20px; background: #f1f8ff; border: 1px solid #c8e1ff; border-radius: 8px; font-size: 0.95rem;">
             <strong style="color: #0366d6;">💡 解析ガイド：</strong><br>
@@ -72,7 +73,7 @@
             <li><a href="05.html">5. GitHubアカウントの作成とリポジトリの設定</a></li>
             <li><a href="06.html">6. ローカル環境の構築：VS CodeとGitの連携</a></li>
             <li><a href="07.html">7. HTML5/CSS3の基本構造：SEOに強いコードの書き方</a></li>
-            <li><a href="08.html">8. 独自ドメインの取得と GitHub Pagesへの紐付け</a></li>
+            <li><a href="08.html">8. 独自ドメインの取得とGitHub Pagesへの紐付け</a></li>
             <li><a href="09.html">9. SSL化の確認とセキュリティ設定の基本</a></li>
             <li><a href="10.html">10. AIを活用したサイトマップとディレクトリ設計</a></li>
             <li><a href="11.html">11. 内部リンク構造の最適化：クローラビリティを高める</a></li>
