@@ -24,36 +24,46 @@
 </header>
 
 <main class="container">
-    <a href="chapter1.html" class="back-link">← 第1章 目次へ戻る</a>
+    <nav>
+        <a href="chapter1.html" class="back-link">← 第1章 目次へ戻る</a>
+    </nav>
     
     <article class="post-content">
         <h1>13. Google Search Consoleへの登録と初期設定</h1>
-        <p>サイトが完成し、インターネット上に公開されただけでは十分ではありません。あなたのサイトがGoogleの検索エンジンに正しくインデックス（登録）され、どのようなキーワードで読者が訪れているかを知る必要があります。そのための羅針盤となるのが「Google Search Console（グーグル・サーチコンソール）」です。このツールを使いこなすことが、SEOをデータに基づいて改善していくための第一歩となります。</p>
+        <p>インフラを構築し、デザインを整えたら、次に行うべきはGoogleという巨大な検索エンジンへ「私のサイトがここにあります」と正式に挨拶することです。Google Search Console（サーチコンソール）は、サイトの検索順位や流入キーワード、インデックス状況（Googleへの登録状況）を監視できる、サイト運営者にとって必須の「健康診断ツール」です。</p>
 
-        
+        <div style="background-color: #fff9db; border: 2px dashed #f39c12; padding: 20px; margin: 30px 0; border-radius: 8px;">
+            <h3 style="margin-top: 0; color: #e67e22;">🚀 この記事のあとの作業工程</h3>
+            <ol style="line-height: 1.8; font-size: 0.95rem;">
+                <li><strong>Googleアカウントを用意しSearch Consoleにログインする</strong></li>
+                <li><strong>独自ドメインの所有権を確認し、サイトを登録する</strong></li>
+                <li><strong>サイトマップ（sitemap.xml）を送信して巡回を促す</strong></li>
+                <li><strong>第14回「Google Analytics 4の設定」へ進む</strong></li>
+            </ol>
+        </div>
 
-        <h2>Googleにサイトの存在を証明する「所有権の確認」</h2>
-        <p>サーチコンソールを利用するには、まずそのサイトが自分のものであることをGoogleに証明（所有権の確認）する必要があります。GitHub Pagesで構築したサイトの場合、最も簡単な方法は「HTMLタグ」による確認です。Googleから発行された専用のメタタグを、<code>index.html</code>の<code>&lt;head&gt;</code>セクション内に貼り付けてプッシュするだけで、瞬時に確認が完了します。また、独自ドメインを使用している場合は、DNS設定にTXTレコードを追加する「ドメインプロパティ」での登録を行うと、サイト全体のデータをより網羅的に取得できるようになります。</p>
+        <h2>検索エンジンとの「対話」を始める</h2>
+        <p>どんなに優れた記事を書いても、Googleに認識されなければ存在しないのと同じです。サーチコンソールにサイトを登録することで、クローラー（Googleの巡回ロボット）に対して優先的な巡回を依頼できます。また、万が一サイトにエラーが発生したり、ペナルティを受けたりした場合も、ここから直接通知が届きます。AIを使って記事を量産するフェーズに入る前に、この「対話の窓口」を確実に開いておきましょう。</p>
 
-        <h2>インデックスを加速させる初期設定</h2>
-        <p>登録が完了したら、最初に行うべき重要な設定が2つあります。</p>
-        <ul>
-            <li><strong>サイトマップの送信:</strong> 10.htmlで作成した<code>sitemap.xml</code>のURLを登録します。これにより、Googleのクローラーにサイト全体の構造を伝え、新しい記事を素早く見つけてもらうことが可能になります。</li>
-            <li><strong>URL検査ツールの活用:</strong> 公開したばかりの重要な記事がある場合、このツールを使って直接Googleにインデックス登録のリクエストを送ることができます。</li>
-        </ul>
+        <h2>データの蓄積が将来の資産価値を決める</h2>
+        <p>サーチコンソールの真価は「読者がどんな言葉で検索して、どのページにたどり着いたか」を可視化できる点にあります。このデータが溜まれば、AIを使って「現在10位の記事を1位に上げるためのリライト案」をより正確に練ることができるようになります。初期段階ではアクセスがゼロでも構いません。まずは計測を開始し、データを蓄積し始めることが、後の「爆発的な伸び」を生む土台となります。</p>
 
-        
-
-        <p>サーチコンソールは「登録して終わり」ではなく、定期的にチェックする習慣をつけましょう。「カバレッジ」レポートでエラーが出ていないか、どのようなキーワードで表示されているかを確認し、AIにそのデータを読み込ませて分析させることで、次なる戦略が見えてきます。次は、読者の動きをより詳細に分析するための「Google Analytics 4」の導入に進みましょう。</p>
+        <div style="margin: 30px 0; padding: 20px; background: #f1f8ff; border: 1px solid #c8e1ff; border-radius: 8px; font-size: 0.95rem;">
+            <strong style="color: #0366d6;">💡 設定ガイド：</strong><br>
+            <p style="margin-top: 10px;">「所有権の確認がうまくいかない」「サイトマップの作り方がわからない」という方は、GitHub Pages利用者向けのサーチコンソール初期設定ガイドをご覧ください。</p>
+            <a href="gsc-setup-guide.html" style="display: inline-block; margin-top: 5px; font-weight: bold; color: #0366d6; text-decoration: underline;">
+                👉 Search Consoleの登録・所有権確認ガイドを読む
+            </a>
+        </div>
     </article>
 
-    <nav class="post-nav" style="display: flex; justify-content: space-between; margin: 40px 0; padding-top: 20px; border-top: 1px solid #eee;">
-        <a href="12.html" style="text-decoration: none; color: #f39c12; font-weight: bold;">← 前のページへ</a>
-        <a href="14.html" style="text-decoration: none; color: #f39c12; font-weight: bold;">次のページへ →</a>
+    <nav class="post-nav" style="display: flex; justify-content: space-between; align-items: center; margin: 40px 0; padding-top: 20px; border-top: 1px solid #eee;">
+        <a href="12.html" style="text-decoration: none; color: #f39c12; font-weight: bold; flex: 1; text-align: left;">← [12. ユーザビリティと表示速度の両立] へ戻る</a>
+        <a href="14.html" style="text-decoration: none; color: #f39c12; font-weight: bold; flex: 1; text-align: right;">[14. Google Analytics 4による計測] へ進む →</a>
     </nav>
 
     <section class="article-footer-nav">
-        <h3>同じカテゴリー（第1章：ゼロコスト・爆速インフラ構築編）の記事</h3>
+        <h3>同じカテゴリーの記事</h3>
         <ul class="vertical-article-list">
             <li><a href="01.html">1. GitHub Pages×AIで作る「維持費0円」の資産サイト</a></li>
             <li><a href="02.html">2. AI軍師と共に戦略を練る：プロンプトエンジニアリング</a></li>
@@ -71,12 +81,6 @@
             <li><a href="14.html">14. Google Analytics 4 (GA4) によるデータ計測の開始</a></li>
             <li><a href="15.html">15. 第1章まとめ：インフラ構築が資産サイトの命運を握る</a></li>
         </ul>
-
-        <div style="margin-top: 40px; text-align: center;">
-            <a href="index.html" style="color: #666; text-decoration: none; font-size: 0.9rem; border-bottom: 1px solid #ddd;">
-                他のカテゴリーの記事を読む（トップページへ戻る）
-            </a>
-        </div>
     </section>
 </main>
 
