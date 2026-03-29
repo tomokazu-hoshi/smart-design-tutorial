@@ -24,31 +24,46 @@
 </header>
 
 <main class="container">
-    <a href="chapter1.html" class="back-link">← 第1章 目次へ戻る</a>
+    <nav>
+        <a href="chapter1.html" class="back-link">← 第1章 目次へ戻る</a>
+    </nav>
     
     <article class="post-content">
         <h1>9. SSL化の確認とセキュリティ設定の基本</h1>
-        <p>WebサイトのURLが「http://」ではなく「https://」で始まっていることは、現代のインターネットにおいて最低限のマナーであり、SEOにおける必須条件です。これはSSL/TLSという技術を用いて通信を暗号化していることを示します。GitHub Pagesでは、この重要なセキュリティ設定を非常に簡単な操作で、かつ無料で有効にすることができます。</p>
+        <p>現代のインターネットにおいて、SSL化（HTTPS）されていないサイトは「危険なサイト」としてブラウザで警告が表示され、検索順位も大幅に下がります。Zero-Cost SEOでは、GitHub Pagesが提供する自動SSL機能を活用し、追加費用ゼロで最高レベルのセキュリティと信頼性を手に入れます。ここでは、SSLの有効化確認と、静的サイトならではの強力なセキュリティ特性について学びます。</p>
 
-        
+        <div style="background-color: #fff9db; border: 2px dashed #f39c12; padding: 20px; margin: 30px 0; border-radius: 8px;">
+            <h3 style="margin-top: 0; color: #e67e22;">🚀 この記事のあとの作業工程</h3>
+            <ol style="line-height: 1.8; font-size: 0.95rem;">
+                <li><strong>GitHubの設定画面で「Enforce HTTPS」にチェックを入れる</strong></li>
+                <li><strong>ブラウザのアドレスバーに「鍵マーク」があるか確認する</strong></li>
+                <li><strong>不必要な外部スクリプトを排除し、安全性を高める</strong></li>
+                <li><strong>第10回「サイトマップとディレクトリ設計」へ進む</strong></li>
+            </ol>
+        </div>
 
-        <h2>なぜSEOにSSL化が必要なのか</h2>
-        <p>Googleは2014年に「HTTPSをランキング信号に使用する」と正式に発表しました。暗号化されていないサイトは、検索結果で不利になるだけでなく、ブラウザ（Chrome等）で「保護されていない通信」という警告が表示され、読者の信頼を著しく損ないます。特に、将来的にアフィリエイトや教材販売など、ユーザーの行動を促す「収益化」を目指すのであれば、安全な通信環境の提供は避けて通れない道です。</p>
+        <h2>Googleが求める「安全なサイト」の証明</h2>
+        <p>Googleは2014年からHTTPSをランキングシグナルとして採用しており、現在では必須条件となっています。独自ドメインを紐付けた直後は一時的にSSLが反映されないことがありますが、GitHub Pagesならボタン一つで無料の証明書（Let's Encrypt）が発行されます。一度設定してしまえば、更新作業も自動で行われるため、管理の手間は一切かかりません。安全な通信経路を確保することは、読者の個人情報を守るだけでなく、サイトの権威性を高める重要なステップです。</p>
 
-        <h2>GitHub Pagesでの「Enforce HTTPS」設定</h2>
-        <p>独自ドメインの設定が完了し、DNSの設定が浸透すると、GitHubのリポジトリ設定（Settings > Pages）にある「Enforce HTTPS」というチェックボックスが選択可能になります。ここにチェックを入れるだけで、すべてのアクセスが自動的に安全なHTTPS接続にリダイレクトされるようになります。一般的なレンタルサーバーでは証明書の更新手続きが必要な場合もありますが、GitHub Pagesでは証明書の管理・更新もすべて自動で行われるため、手間は一切かかりません。</p>
+        <h2>静的サイトは「物理的に」ハッキングに強い</h2>
+        <p>WordPressなどの動的サイトと違い、静的サイトには「データベース」が存在しません。これは、Webサイトへの攻撃の主流である「SQLインジェクション」や「クロスサイトスクリプティング（XSS）」といった攻撃の入り口が物理的に存在しないことを意味します。この究極のシンプルさが、最高レベルのセキュリティを実現します。余計なプラグインによる脆弱性を心配することなく、あなたはコンテンツ制作だけに集中できるのです。</p>
 
-        <h2>静的サイトが誇る「鉄壁のセキュリティ」</h2>
-        <p>Zero-Cost SEOで静的サイトを採用している隠れた大きなメリットは、そのセキュリティの高さです。WordPressなどの動的サイトはデータベース（MySQL等）を使用するため、SQLインジェクションなどの攻撃を受けるリスクが常にあります。しかし、GitHub Pagesで公開しているのは単なる「HTMLファイル」です。攻撃者が侵入する隙間となるデータベース自体が存在しないため、物理的にハッキングのリスクを極限まで抑えることができます。この「守りの強さ」も、長期的に資産を守り続けるための重要な要素です。</p>
+        <div style="margin: 30px 0; padding: 20px; background: #f1f8ff; border: 1px solid #c8e1ff; border-radius: 8px; font-size: 0.95rem;">
+            <strong style="color: #0366d6;">💡 セキュリティガイド：</strong><br>
+            <p style="margin-top: 10px;">SSL化がうまくいかない場合の対処法や、さらにサイトの安全性を高めるための「セキュリティヘッダー」の考え方については、こちらをご覧ください。</p>
+            <a href="ssl-security-guide.html" style="display: inline-block; margin-top: 5px; font-weight: bold; color: #0366d6; text-decoration: underline;">
+                👉 SSL化のトラブル解消とセキュリティ強化ガイドを読む
+            </a>
+        </div>
     </article>
 
-    <nav class="post-nav" style="display: flex; justify-content: space-between; margin: 40px 0; padding-top: 20px; border-top: 1px solid #eee;">
-        <a href="08.html" style="text-decoration: none; color: #f39c12; font-weight: bold;">← 前のページへ</a>
-        <a href="10.html" style="text-decoration: none; color: #f39c12; font-weight: bold;">次のページへ →</a>
+    <nav class="post-nav" style="display: flex; justify-content: space-between; align-items: center; margin: 40px 0; padding-top: 20px; border-top: 1px solid #eee;">
+        <a href="08.html" style="text-decoration: none; color: #f39c12; font-weight: bold; flex: 1; text-align: left;">← [8. 独自ドメインの取得と紐付け] へ戻る</a>
+        <a href="10.html" style="text-decoration: none; color: #f39c12; font-weight: bold; flex: 1; text-align: right;">[10. AIを活用した設計] へ進む →</a>
     </nav>
 
     <section class="article-footer-nav">
-        <h3>同じカテゴリー（第1章：ゼロコスト・爆速インフラ構築編）の記事</h3>
+        <h3>同じカテゴリーの記事</h3>
         <ul class="vertical-article-list">
             <li><a href="01.html">1. GitHub Pages×AIで作る「維持費0円」の資産サイト</a></li>
             <li><a href="02.html">2. AI軍師と共に戦略を練る：プロンプトエンジニアリング</a></li>
@@ -66,12 +81,6 @@
             <li><a href="14.html">14. Google Analytics 4 (GA4) によるデータ計測の開始</a></li>
             <li><a href="15.html">15. 第1章まとめ：インフラ構築が資産サイトの命運を握る</a></li>
         </ul>
-
-        <div style="margin-top: 40px; text-align: center;">
-            <a href="index.html" style="color: #666; text-decoration: none; font-size: 0.9rem; border-bottom: 1px solid #ddd;">
-                他のカテゴリーの記事を読む（トップページへ戻る）
-            </a>
-        </div>
     </section>
 </main>
 
