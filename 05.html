@@ -24,25 +24,27 @@
 </header>
 
 <main class="container">
-    <a href="chapter1.html" class="back-link">← 第1章 目次へ戻る</a>
+    <nav>
+        <a href="chapter1.html" class="back-link">← 第1章 目次へ戻る</a>
+    </nav>
     
     <article class="post-content">
         <h1>5. GitHubアカウントの作成とリポジトリの設定</h1>
-        <p>Zero-Cost SEOの物理的な第一歩は、GitHub上にあなたの「拠点」を作ることから始まります。GitHubは世界中のプログラマーがコードを管理するためのプラットフォームですが、その強力なホスティング機能「GitHub Pages」を利用することで、私たちは維持費0円の爆速サイトを手に入れることができます。まずは、アカウントの作成と、サイトの土台となる「リポジトリ」の設定を行いましょう。</p>
+        <p>Zero-Cost SEOの物理的な第一歩は、GitHub上にあなたの「拠点」を構築することから始まります。GitHubは世界中のエンジニアがコードを管理・共有するためのプラットフォームですが、その強力なホスティング機能「GitHub Pages」を活用することで、私たちは維持費0円の爆速サイトを手に入れることができます。まずは、アカウントの作成と、サイトの心臓部となる「リポジトリ」の初期設定を行いましょう。</p>
 
-        [Image showing the GitHub sign-up screen and the "Create a new repository" settings page with Public and README options highlighted]
+        [図解：GitHubのサインアップ画面と、リポジトリ作成時の推奨設定（Public選択およびREADMEの追加）]
 
         <h2>GitHubアカウント作成のポイント</h2>
-        <p>GitHubのアカウント作成は、一般的なSNSと同じようにメールアドレスがあれば数分で完了します。ここでの唯一の注意点は「ユーザー名（Username）」です。デフォルトの状態では、あなたのサイトのURLが <code>ユーザー名.github.io</code> になるため、できるだけサイトの内容や自分のブランドに関連した、シンプルで信頼感のある名前を選ぶのが理想的です（後から独自ドメインを設定する場合も、管理画面で見分ける際に役立ちます）。</p>
+        <p>GitHubのアカウント作成は、一般的なウェブサービスと同様にメールアドレスがあれば数分で完了します。ここで唯一戦略的に考えるべきなのが「ユーザー名（Username）」です。デフォルトの状態では、あなたのサイトのURLが <code>ユーザー名.github.io</code> となるため、ブランド名やプロジェクトに関連した、シンプルかつ信頼感のある名称を選ぶことが重要です。これは後に独自ドメインを設定する場合でも、管理の効率化において役立ちます。</p>
 
-        <h2>リポジトリ（Repository）を「公開」で作成する</h2>
-        <p>アカウントができたら、次に「リポジトリ」を作成します。リポジトリとは、サイトを構成する全てのファイルを保管する「箱」のようなものです。GitHub Pagesを無料で利用するためには、以下の設定が必須となります。</p>
+        <h2>リポジトリ（Repository）を「Public（公開）」で作成する</h2>
+        <p>アカウントが作成できたら、次に「リポジトリ」を構築します。リポジトリとは、サイトを構成するすべてのファイル（HTML、CSS、画像など）を保管し、変更履歴を記録する「データ保管庫」のようなものです。GitHub Pagesを無料で利用するためには、以下の設定を正確に行う必要があります。</p>
         <ul>
-            <li><strong>Repository name:</strong> 任意ですが、プロジェクト名に関連した英数字にします。</li>
-            <li><strong>Public / Private:</strong> 必ず「Public（公開）」を選択してください。無料プランでGitHub Pagesを利用するには公開設定が必要です。</li>
-            <li><strong>Initialize this repository:</strong> 「Add a README file」にチェックを入れておくと、作成直後からリポジトリがアクティブになり、スムーズに作業を開始できます。</li>
+            <li><strong>Repository name:</strong> プロジェクトに関連した英数字にします（例：my-asset-site）。</li>
+            <li><strong>Public / Private:</strong> 必ず「Public（公開）」を選択してください。無料プランでGitHub Pagesを運用するには、公開設定が必須条件となります。</li>
+            <li><strong>Initialize this repository:</strong> 「Add a README file」にチェックを入れてください。これにより、リポジトリ作成と同時に初期ファイルが生成され、スムーズに作業を開始できます。</li>
         </ul>
-        <p>これで、あなたの資産サイトのための「土地」と「箱」が用意されました。次はいよいよ、手元のパソコンからこの場所を操作するための環境を整えていきましょう。</p>
+        <p>これで、あなたの資産サイトのための「土地」と「保管庫」が確保されました。次はいよいよ、手元のパソコンからこの場所を自由自在に操作するための「ローカル開発環境」を整えていきましょう。</p>
     </article>
 
     <nav class="post-nav" style="display: flex; justify-content: space-between; margin: 40px 0; padding-top: 20px; border-top: 1px solid #eee;">
