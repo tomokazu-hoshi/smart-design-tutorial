@@ -24,30 +24,49 @@
 </header>
 
 <main class="container">
-    <a href="chapter1.html" class="back-link">← 第1章 目次へ戻る</a>
+    <nav>
+        <a href="chapter1.html" class="back-link">← 第1章 目次へ戻る</a>
+    </nav>
     
     <article class="post-content">
         <h1>6. ローカル環境の構築：VS CodeとGitの連携</h1>
-        <p>GitHubのブラウザ画面上でもファイルの編集は可能ですが、100記事、200記事と資産を積み上げていくためには、手元のパソコンで効率よく作業できる「ローカル環境」の構築が不可欠です。世界中のプロの開発者が愛用するエディタ「Visual Studio Code (VS Code)」と、変更履歴を記録するツール「Git」を連携させることで、執筆スピードと安全性を両立させましょう。</p>
+        <p>これまではブラウザ上で設定を行ってきましたが、効率的に大量の記事を執筆・編集するためには、手元のパソコン（ローカル環境）にプロ仕様の作業道具を揃える必要があります。世界中のエンジニアが愛用するエディタ「VS Code」と、変更を記録するツール「Git」を導入し、GitHubと連携させることで、あなたの執筆スピードは劇的に向上します。</p>
 
-        
+        <div style="background-color: #fff9db; border: 2px dashed #f39c12; padding: 20px; margin: 30px 0; border-radius: 8px;">
+            <h3 style="margin-top: 0; color: #e67e22;">🚀 この記事のあとの作業工程</h3>
+            <p style="font-size: 0.9rem; margin-bottom: 15px;">あなたのPCを「資産サイト制作工場」に変える4ステップです。</p>
+            <ol style="line-height: 1.8; font-size: 0.95rem;">
+                <li><strong>VS Code（エディタ）をインストールする</strong><br>
+                    <small>→ 記事を書くための最強のペンを手に入れます</small></li>
+                <li><strong>Gitをインストールする</strong><br>
+                    <small>→ 保存した履歴をGitHubへ送るための運送役です</small></li>
+                <li><strong>VS CodeからGitHubへログインする</strong><br>
+                    <small>→ これにより、PCとクラウドが一つに繋がります</small></li>
+                <li><strong>サイトのコード（HTML）を書き始める</strong><br>
+                    <small>→ 次の第7回へ進む準備をします</small></li>
+            </ol>
+        </div>
 
-        <h2>最強のエディタ「VS Code」を導入する</h2>
-        <p>VS Codeは、Microsoftが提供している無料の高機能エディタです。単に文字を入力するだけでなく、HTMLの書き間違いを教えてくれたり、AIによる執筆補助（Copilotなど）を追加したりすることができます。まずは公式サイトからインストールし、日本語化パッケージを導入して、あなたの「執筆基地」を整えましょう。これにより、ブラウザ上では難しかった「複数ファイルの一括編集」や「高度な検索」が自由自在になります。</p>
+        <h2>なぜ「VS Code」を使うのか？</h2>
+        <p>「メモ帳」でもHTMLは書けますが、VS Codeを使う理由は明確です。それは、**AIとの相性が抜群に良いから**です。VS Codeには多くの拡張機能があり、AIにコードを修正させたり、リアルタイムでプレビューを確認したりすることが容易です。また、プロジェクト全体を見渡せるフォルダ管理機能により、100本の記事を管理しても迷子になることはありません。</p>
 
-        <h2>Gitで「タイムマシン」を手に入れる</h2>
-        <p>Git（ギット）は、ファイルの変更履歴を保存するためのツールです。「記事を書き直したけれど、やっぱり前の状態に戻したい」と思ったことはありませんか？ GitをVS Codeと連携させておけば、ボタン一つで過去のどの時点の状態にも戻すことができます。これを活用する基本的な流れは以下の3ステップです。</p>
-        <ul>
-            <li><strong>Clone（クローン）：</strong> GitHub上のリポジトリを、自分のパソコンへコピーする。</li>
-            <li><strong>Commit（コミット）：</strong> 変更を加えた内容に「何をしたか」のメモを添えて、ローカルに保存する。</li>
-            <li><strong>Push（プッシュ）：</strong> ローカルでの変更を、インターネット上のGitHubへ反映（公開）させる。</li>
-        </ul>
-        <p>一見難しそうに感じるかもしれませんが、VS Codeを使えばコマンドを打つ必要はなく、マウス操作だけでこれらの作業が完結します。一度この環境に慣れてしまえば、ブラウザでの編集には二度と戻れないほどの快適さを実感できるはずです。準備が整ったら、次はいよいよSEOに強いサイトの「骨組み」を書いていきましょう。</p>
+        <div style="margin: 30px 0; padding: 20px; background: #f1f8ff; border: 1px solid #c8e1ff; border-radius: 8px; font-size: 0.95rem;">
+            <strong style="color: #0366d6;">💡 ローカル環境構築ガイド：</strong><br>
+            <p style="margin-top: 10px;">「インストールが難しそう」「Gitの設定がわからない」という方は、画面写真付きの以下の詳細ガイドを確認しながら進めてください。</p>
+            <a href="vscode-git-setup-guide.html" style="display: inline-block; margin-top: 5px; font-weight: bold; color: #0366d6; text-decoration: underline;">
+                👉 VS CodeとGitの導入・連携ガイド（初心者向け）を読む
+            </a>
+        </div>
+
+        <h2>Git連携で「書く・守る・送る」を自動化</h2>
+        <p>Gitは、サイトの変更履歴をすべて記録してくれるタイムマシンのようなツールです。VS Codeと連携させることで、ボタン一つで編集内容をGitHub Pagesに反映（アップロード）できるようになります。これにより、間違えてファイルを消してしまった時でもすぐに元の状態に戻せる、極めて安全な運用が可能になります。AIが生成した高品質なコードを、最速かつ安全に世に送り出す仕組みをここで完成させましょう。</p>
+
+        <p style="margin-top: 25px;">道具が揃えば、次はいよいよ「SEOに強いコードの書き方」の実践に入ります。あなたの言葉を検索エンジンの1位へと届けるための、具体的なコーディング術を学んでいきましょう。</p>
     </article>
 
     <nav class="post-nav" style="display: flex; justify-content: space-between; margin: 40px 0; padding-top: 20px; border-top: 1px solid #eee;">
-        <a href="05.html" style="text-decoration: none; color: #f39c12; font-weight: bold;">← 前のページへ</a>
-        <a href="07.html" style="text-decoration: none; color: #f39c12; font-weight: bold;">次のページへ →</a>
+        <a href="05.html" style="text-decoration: none; color: #f39c12; font-weight: bold;">← [5. GitHubアカウント作成とリポジトリ設定] へ戻る</a>
+        <a href="07.html" style="text-decoration: none; color: #f39c12; font-weight: bold;">[7. HTML5/CSS3の基本構造：SEOに強いコード] へ進む →</a>
     </nav>
 
     <section class="article-footer-nav">
@@ -59,22 +78,8 @@
             <li><a href="04.html">4. 爆速表示を実現する静的サイトの優位性</a></li>
             <li><a href="05.html">5. GitHubアカウントの作成とリポジトリの設定</a></li>
             <li><a href="06.html">6. ローカル環境の構築：VS CodeとGitの連携</a></li>
-            <li><a href="07.html">7. HTML5/CSS3の基本構造：SEOに強いコードの書き方</a></li>
-            <li><a href="08.html">8. 独自ドメインの取得とGitHub Pagesへの紐付け</a></li>
-            <li><a href="09.html">9. SSL化の確認とセキュリティ設定の基本</a></li>
-            <li><a href="10.html">10. AIを活用したサイトマップとディレクトリ設計</a></li>
-            <li><a href="11.html">11. 内部リンク構造の最適化：クローラビリティを高める</a></li>
-            <li><a href="12.html">12. サイトデザインの基本：ユーザビリティと表示速度の両立</a></li>
-            <li><a href="13.html">13. Google Search Consoleへの登録と初期設定</a></li>
-            <li><a href="14.html">14. Google Analytics 4 (GA4) によるデータ計測の開始</a></li>
             <li><a href="15.html">15. 第1章まとめ：インフラ構築が資産サイトの命運を握る</a></li>
         </ul>
-
-        <div style="margin-top: 40px; text-align: center;">
-            <a href="index.html" style="color: #666; text-decoration: none; font-size: 0.9rem; border-bottom: 1px solid #ddd;">
-                他のカテゴリーの記事を読む（トップページへ戻る）
-            </a>
-        </div>
     </section>
 </main>
 
