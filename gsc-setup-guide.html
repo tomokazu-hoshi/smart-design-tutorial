@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H56XHD5MLW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-H56XHD5MLW');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Consoleの登録・所有権確認ガイド | Zero-Cost SEO</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="main-header">
+    <div class="container">
+        <h1>Zero-Cost SEO</h1>
+        <p>技術とAIで、コストゼロの資産サイトを構築する</p>
+    </div>
+</header>
+
+<main class="container">
+    <nav>
+        <a href="#" onclick="history.back(); return false;" class="back-link">← 第13回 本編へ戻る</a>
+    </nav>
+    
+    <article class="post-content">
+        <h1>Search Consoleの登録・所有権確認ガイド</h1>
+        <p>Google Search Console（サーチコンソール）は、Googleがあなたのサイトをどう見ているかを知るための「公式窓口」です。GitHub Pagesで運用しているサイトを正しく登録し、Googleのインデックス（検索結果への掲載）を促進させるための手順を解説します。</p>
+
+        <div style="background-color: #f8f9fa; border-left: 5px solid #4285f4; padding: 20px; margin: 30px 0; border-radius: 8px;">
+            <h2 style="margin-top: 0; font-size: 1.2rem;">🛠️ 登録の全体フロー</h2>
+            <ol style="margin-bottom: 0; line-height: 1.8;">
+                <li>Googleアカウントでログインする</li>
+                <li>プロパティ（サイトURL）を追加する</li>
+                <li><strong>所有権を確認する（ここが最重要）</strong></li>
+                <li>サイトマップを送信する</li>
+            </ol>
+        </div>
+
+        <h2 style="border-bottom: 2px solid #4285f4; padding-bottom: 5px;">1. サイトの追加と所有権の確認</h2>
+        <p>まずは <a href="https://search.google.com/search-console/about?hl=ja" target="_blank" rel="noopener">Search Console公式サイト</a> にアクセスし、「今すぐ開始」をクリックします。</p>
+        
+        <h3>プロパティ タイプの選択</h3>
+        <p>独自ドメイン（例：example.com）を使用している場合は、左側の<strong>「ドメイン」</strong>を選択して入力するのが最も効果的です。サイト全体のデータを一括で管理できるようになります。</p>
+
+        <h3>DNSレコードによる確認（GitHub Pages利用者の場合）</h3>
+        <p>ドメインプロパティを選択すると、TXTレコードという「暗号」が表示されます。これをコピーして、ドメイン管理サービス（お名前.comやCloudflare）のDNS設定画面に貼り付けてください。</p>
+        
+        <ul style="background: #fff9db; padding: 20px; border-radius: 8px; list-style: none;">
+            <li>✅ <strong>種別：</strong> TXT</li>
+            <li>✅ <strong>ホスト名：</strong> @ (または空欄)</li>
+            <li>✅ <strong>値：</strong> google-site-verification=...（コピーした文字列）</li>
+        </ul>
+        <p><small>※DNSの反映には数分〜数時間かかる場合があります。反映後にサーチコンソールの「確認」ボタンを押せば完了です。</small></p>
+
+        <h2 style="border-bottom: 2px solid #4285f4; padding-bottom: 5px; margin-top: 40px;">2. サイトマップの送信</h2>
+        <p>所有権が確認できたら、Googleにサイトの構造を伝える「サイトマップ」を送信しましょう。これにより、新しく書いた記事が素早く検索結果に載るようになります。</p>
+        <ol>
+            <li>管理画面の左メニューから「サイトマップ」をクリック。</li>
+            <li>「新しいサイトマップの追加」欄に <code>sitemap.xml</code> と入力して送信。</li>
+            <li>ステータスが「成功しました」になればOKです。</li>
+        </ol>
+
+        <div style="background-color: #fff5f5; border: 1px solid #feb2b2; padding: 20px; border-radius: 8px; margin-top: 40px;">
+            <strong style="color: #c53030;">⚠️ よくあるトラブル：確認が失敗する</strong><br>
+            <p style="font-size: 0.95rem; margin-top: 10px; line-height: 1.6;">
+                「所有権を証明できませんでした」と出る場合、DNSの設定が反映されるまで時間がかかっている可能性が高いです。1時間ほど置いてから再度試してみてください。また、TXTレコードの値が正しくコピーされているかも再確認しましょう。
+            </p>
+        </div>
+    </article>
+
+    <div style="text-align: center; margin: 50px 0;">
+        <a href="#" onclick="history.back(); return false;" style="background: #4285f4; color: white; padding: 18px 40px; border-radius: 50px; text-decoration: none; font-weight: bold; display: inline-block; box-shadow: 0 4px 15px rgba(66, 133, 244, 0.3);">
+            ← 設定を終えたので本編に戻る
+        </a>
+    </div>
+</main>
+
+<footer class="main-footer">
+    <div class="container">
+        <p>&copy; 2026 Zero-Cost SEO - 星 友和</p>
+    </div>
+</footer>
+
+</body>
+</html>
