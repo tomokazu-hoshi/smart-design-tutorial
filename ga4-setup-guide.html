@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H56XHD5MLW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-H56XHD5MLW');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GA4の初期設定と計測確認ガイド | Zero-Cost SEO</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="main-header">
+    <div class="container">
+        <h1>Zero-Cost SEO</h1>
+        <p>技術とAIで、コストゼロの資産サイトを構築する</p>
+    </div>
+</header>
+
+<main class="container">
+    <nav>
+        <a href="#" onclick="history.back(); return false;" class="back-link">← 第14回 本編へ戻る</a>
+    </nav>
+    
+    <article class="post-content">
+        <h1>GA4の初期設定と計測確認ガイド</h1>
+        <p>Googleアナリティクス4（GA4）は、サイトを訪れたユーザーが「どのページを読み、どこをクリックしたか」を可視化する強力なツールです。正しくコードを設置し、正確なデータを蓄積するための手順を解説します。</p>
+
+        <div style="background-color: #f8f9fa; border-left: 5px solid #f9ab00; padding: 20px; margin: 30px 0; border-radius: 8px;">
+            <h2 style="margin-top: 0; font-size: 1.2rem;">📊 GA4導入の3ステップ</h2>
+            <ol style="margin-bottom: 0; line-height: 1.8;">
+                <li>Googleアナリティクスでプロパティを作成する</li>
+                <li><strong>「測定ID（G-XXXXXX）」を取得し、HTMLに貼る</strong></li>
+                <li>リアルタイムレポートで動作を確認する</li>
+            </ol>
+        </div>
+
+        <h2 style="border-bottom: 2px solid #f9ab00; padding-bottom: 5px;">1. 測定IDの取得と設置場所</h2>
+        <p>まずは <a href="https://analytics.google.com/analytics/web/" target="_blank" rel="noopener">Googleアナリティクス公式サイト</a> でプロパティを作成し、「データストリーム」から自分のサイトURLを登録します。</p>
+        
+        <h3>トラッキングコードの貼り付け位置</h3>
+        <p>発行された「タグ（gtag.js）」は、サイト内の **すべてのHTMLファイルの <code>&lt;head&gt;</code> タグの直後** に貼り付けてください。Zero-Cost SEOでは、全てのページで共通の解析コードを使用します。</p>
+
+        <div style="background: #2d3436; color: #dfe6e9; padding: 15px; border-radius: 8px; font-family: monospace; font-size: 0.85rem;">
+            &lt;head&gt;<br>
+            &lt;!-- ここにGoogleタグを貼り付け --&gt;<br>
+            &lt;script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXX"&gt;&lt;/script&gt;<br>
+            ...
+        </div>
+
+        <h2 style="border-bottom: 2px solid #f9ab00; padding-bottom: 5px; margin-top: 40px;">2. 自分のアクセスを除外する（重要）</h2>
+        <p>自分が記事を更新したり確認したりする際のアクセスがカウントされると、正しい分析ができません。自分のIPアドレスを除外設定しておきましょう。</p>
+        <ol>
+            <li>管理画面 ➔ データストリーム ➔ 自分のサイトを選択。</li>
+            <li>「タグ設定を行う」 ➔ 「すべて表示」 ➔ 「内部トラフィックの定義」をクリック。</li>
+            <li>自分のIPアドレスを入力し、「作成」を押します。</li>
+        </ol>
+        <p><small>※自分のIPアドレスは <a href="https://www.google.com/search?q=what+is+my+ip" target="_blank" rel="noopener">Google検索で「what is my ip」と検索</a> するとすぐに確認できます。</small></p>
+
+        <h2 style="border-bottom: 2px solid #f9ab00; padding-bottom: 5px; margin-top: 40px;">3. 計測できているか確認する</h2>
+        <p>コードをアップロード（Git push）した後、自分のスマホやPCでサイトを開き、GA4のメニューにある **「リアルタイム」** を開いてください。地図上に「1」という数字（現在のユーザー）が表示されれば、設置成功です！</p>
+
+        <div style="background-color: #fff9db; border: 2px dashed #f39c12; padding: 20px; margin-top: 40px; border-radius: 8px;">
+            <h3 style="margin-top: 0; color: #e67e22;">🚀 設定が完了したら</h3>
+            <p style="font-size: 0.95rem; margin-bottom: 0;">これでインフラと計測の準備がすべて整いました。第1章の最終回（まとめ）に進み、これから始まるAIコンテンツ量産フェーズに向けて意識を高めましょう！</p>
+        </div>
+    </article>
+
+    <div style="text-align: center; margin: 50px 0;">
+        <a href="#" onclick="history.back(); return false;" style="background: #f9ab00; color: white; padding: 18px 40px; border-radius: 50px; text-decoration: none; font-weight: bold; display: inline-block; box-shadow: 0 4px 15px rgba(249, 171, 0, 0.3);">
+            ← 設定を終えたので本編に戻る
+        </a>
+    </div>
+</main>
+
+<footer class="main-footer">
+    <div class="container">
+        <p>&copy; 2026 Zero-Cost SEO - 星 友和</p>
+    </div>
+</footer>
+
+</body>
+</html>
