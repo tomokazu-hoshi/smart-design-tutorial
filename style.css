@@ -22,17 +22,15 @@ body {
 .main-header {
     text-align: center;
     padding: 40px 0;
-    background: #2c3e50; /* これが通常時の紺色設定 */
+    background: #2c3e50; 
     color: white;
     border-radius: 0 0 20px 20px;
     margin-bottom: 30px;
 }
 
 /* 【重要】移行ガイド専用：水色テーマの設定 */
-/* HTMLの <body> タグに migration-theme クラスがついた時だけ、
-   ヘッダーの背景色を水色(#3498db)に切り替えます。 */
 .migration-theme .main-header {
-    background: #3498db; 
+    background: #3498db; /* 水色に変更 */
 }
 
 .main-header h1 {
