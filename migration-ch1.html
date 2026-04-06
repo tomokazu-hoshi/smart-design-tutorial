@@ -15,6 +15,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body { background-color: #f0f7ff; color: #333; }
+        
+        /* トップページと同じように、外部style.cssよりも優先させるスタイルを記述します */
+        .main-header {
+            text-align: center;
+            padding: 40px 0;
+            background: #3498db; /* 水色 */
+            color: white;
+            border-radius: 0 0 20px 20px;
+            margin-bottom: 30px;
+        }
+        .main-header h1 {
+            color: white;
+            margin: 0;
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+        .main-header p {
+            color: white;
+            margin: 10px 0 0 0;
+            opacity: 0.9;
+            font-size: 0.9rem;
+        }
+
         .article-list-container { margin-top: 30px; }
         .article-item-card {
             display: flex;
@@ -61,10 +84,10 @@
 </head>
 <body>
 
-<header class="main-header" style="background: #3498db !important; color: white !important; text-align: center; padding: 40px 0 !important; border-radius: 0 0 20px 20px !important; margin-bottom: 30px !important;">
+<header class="main-header">
     <div class="container">
-        <h1 style="color: white !important; margin: 0; font-size: 1.8rem; font-weight: bold;">Zero-Cost SEO</h1>
-        <p style="color: white !important; margin: 10px 0 0 0; opacity: 0.9; font-size: 0.9rem;">特別ガイド：移行の決断と戦略</p>
+        <h1>Zero-Cost SEO</h1>
+        <p>特別ガイド：移行の決断と戦略</p>
     </div>
 </header>
 
