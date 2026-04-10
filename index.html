@@ -16,51 +16,33 @@
 </head>
 <body>
 
+<div id="full-screen-menu">
+    <div class="menu-close" onclick="toggleMenu()">×</div>
+    <ul class="menu-list">
+        <li><a href="index.html">🏠 トップページに戻る</a></li>
+        <li><a href="chapter1.html">第1章：インフラ構築編</a></li>
+        <li><a href="migration-guide.html">🚀 WordPress移行ガイド</a></li>
+    </ul>
+</div>
+
 <header class="main-header">
     <div class="container">
         <h1>Zero-Cost SEO</h1>
         <p>技術とAIで、コストゼロの資産サイトを構築する</p>
+        <button class="search-trigger" onclick="toggleMenu()">🔍 メニュー</button>
     </div>
 </header>
 
 <main class="container">
-    
     <a href="chapter1.html" class="chapter-card">
         <h2>第1章：インフラ構築編</h2>
-        <p>GitHub Pages × AIで作る「維持費0円」の強固な土台作り。</p>
+        <p>維持費0円の強固な土台作り。</p>
     </a> 
-
-    <a href="chapter2.html" class="chapter-card">
-        <h2>第2章：コンテンツ・エンジニアリング編</h2>
-        <p>読者の意図を解読し、AIで高品質な記事を量産する技術。</p>
-    </a>
-
-    <a href="chapter3.html" class="chapter-card">
-        <h2>第3章：マネタイズ・収益最大化編</h2>
-        <p>アフィリエイトと広告配置で、サイトを収益化する戦略。</p>
-    </a>
-
-    <a href="chapter4.html" class="chapter-card">
-        <h2>第4章：E-E-A-Tと信頼性構築編</h2>
-        <p>AI時代に検索エンジンから評価されるための信頼構築術。</p>
-    </a>
-
-    <a href="chapter5.html" class="chapter-card">
-        <h2>第5章：AIオートメーション編</h2>
-        <p>PythonとAPIを駆使した、運用自動化とスケーリング。</p>
-    </a>
-
-    <a href="chapter6.html" class="chapter-card">
-        <h2>第6章：新時代のサイト運営・未来戦略編</h2>
-        <p>10年先を見据え、資産をブランド化していく最終戦略。</p>
-    </a>
-
     <a href="migration-guide.html" class="chapter-card special-card">
         <span class="badge">EXTRA GUIDE</span>
         <h2>GitHub → WordPress 移行ガイド</h2>
-        <p>100記事完遂後のステップ。SEO評価を維持したまま有料環境へ移行する全技術。</p>
+        <p>有料環境へ移行する全技術。</p>
     </a>
-
 </main>
 
 <footer class="footer">
@@ -68,6 +50,14 @@
         <p>&copy; 2026 Zero-Cost SEO - 星 友和</p>
     </div>
 </footer>
+
+<script>
+    function toggleMenu() {
+        const menu = document.getElementById('full-screen-menu');
+        menu.classList.toggle('open');
+        document.body.style.overflow = menu.classList.contains('open') ? 'hidden' : 'auto';
+    }
+</script>
 
 </body>
 </html>
