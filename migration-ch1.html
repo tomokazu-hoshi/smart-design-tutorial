@@ -1,70 +1,168 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H56XHD5MLW"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-H56XHD5MLW');
-    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>第1章：移行の決断と戦略編 | WordPress移行ガイド</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
-    </head>
-<body class="migration-theme">
+    <title>第1章：移行の決断と戦略編 - Zero-Cost SEO</title>
+    <style>
+        :root {
+            --primary-color: #4a90e2;
+            --text-color: #333;
+            --bg-color: #f9f9f9;
+            --box-bg: #ffffff;
+            --accent-color: #d4af37; /* 金色に近い数字の色 */
+        }
 
-<header class="main-header">
-    <div class="container">
+        body {
+            font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .header {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .header p {
+            margin: 10px 0 0;
+            font-size: 14px;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 0 15px;
+        }
+
+        .nav-back {
+            display: block;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        h2 {
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+
+        .intro-text {
+            margin-bottom: 30px;
+            font-size: 15px;
+        }
+
+        /* ボックスリストのデザイン */
+        .article-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .article-card {
+            background-color: var(--box-bg);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            text-decoration: none;
+            color: var(--text-color);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            transition: transform 0.2s;
+        }
+
+        .article-card:active {
+            transform: scale(0.98);
+        }
+
+        .article-number {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--accent-color);
+            width: 40px;
+            flex-shrink: 0;
+            text-align: center;
+            margin-right: 15px;
+        }
+
+        .article-title {
+            flex-grow: 1;
+            font-size: 15px;
+            font-weight: 500;
+            padding-right: 10px;
+        }
+
+        .arrow {
+            color: #ccc;
+            font-size: 18px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            font-size: 13px;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
         <h1>Zero-Cost SEO</h1>
         <p>特別ガイド：WordPress移行戦略</p>
     </div>
-</header>
 
-<main class="container">
-    <nav>
-        <a href="migration-guide.html" class="back-link">← 移行ガイド目次へ戻る</a>
-    </nav>
-    
-    <div class="chapter-header">
-        <h1>第1章：移行の決断と戦略編</h1>
-        <p>なぜ今、WordPressなのか。コストゼロ運営の先にある「投資」としてのサイト構築を学びます。</p>
-    </div>
-
-    <div class="article-list-container">
-        <a href="migration-1.html" class="article-item-card">
-            <span class="article-item-number">1</span>
-            <span class="article-item-title">GitHub Pagesの限界とWordPressの優位性</span>
-            <span class="article-item-arrow">→</span>
-        </a>
-
-        <a href="migration-2.html" class="article-item-card">
-            <span class="article-item-number">2</span>
-            <span class="article-item-title">「自分の時間」を「お金」で買う：レバレッジの考え方</span>
-            <span class="article-item-arrow">→</span>
-        </a>
-
-        <a href="migration-3.html" class="article-item-card">
-            <span class="article-item-number">3</span>
-            <span class="article-item-title">移行すべき数値基準：PV数と収益性のデッドライン</span>
-            <span class="article-item-arrow">→</span>
-        </a>
-
-        <a href="migration-4.html" class="article-item-card">
-            <span class="article-item-number">4</span>
-            <span class="article-item-title">WordPress移行で得られる3つの武器</span>
-            <span class="article-item-arrow">→</span>
-        </a>
-    </div>
-</main>
-
-<footer class="footer-text">
     <div class="container">
-        <p>&copy; 2026 Zero-Cost SEO - 星 友和</p>
+        <a href="index.html" class="nav-back">← 移行ガイド目次へ戻る</a>
+
+        <h2>第1章：移行の決断と戦略編</h2>
+        
+        <p class="intro-text">
+            なぜ今、WordPressなのか。コストゼロ運営の先にある「投資」としてのサイト構築を学びます。
+        </p>
+
+        <div class="article-list">
+            <a href="article1.html" class="article-card">
+                <span class="article-number">1</span>
+                <span class="article-title">GitHub Pagesの限界とWordPressの優位性</span>
+                <span class="arrow">→</span>
+            </a>
+
+            <a href="article2.html" class="article-card">
+                <span class="article-number">2</span>
+                <span class="article-title">「自分の時間」を「お金」で買う：レバレッジの考え方</span>
+                <span class="arrow">→</span>
+            </a>
+
+            <a href="article3.html" class="article-card">
+                <span class="article-number">3</span>
+                <span class="article-title">移行すべき数値基準：PV数と収益性のデッドライン</span>
+                <span class="arrow">→</span>
+            </a>
+
+            <a href="article4.html" class="article-card">
+                <span class="article-number">4</span>
+                <span class="article-title">WordPress移行で得られる3つの武器</span>
+                <span class="arrow">→</span>
+            </a>
+        </div>
+
+        <footer>
+            © 2026 Zero-Cost SEO - 星 友和
+        </footer>
     </div>
-</footer>
 
 </body>
 </html>
