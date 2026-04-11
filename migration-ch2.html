@@ -13,8 +13,8 @@
     <title>第2章：インフラ準備編 | WordPress移行ガイド</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
-    </head>
-<body class="migration-theme">
+</head>
+<body class="migration-page">
 
 <header class="main-header">
     <div class="container">
@@ -24,43 +24,51 @@
 </header>
 
 <main class="container">
-    <nav>
+    <nav class="breadcrumb-nav" style="margin: 20px 0;">
         <a href="migration-guide.html" class="back-link">← 移行ガイド目次へ戻る</a>
     </nav>
     
-    <div class="chapter-header">
-        <h1>第2章：インフラ準備編</h1>
+    <article class="post-content">
+        <h1 style="font-size: 2rem; font-weight: bold; margin-top: 0;">第2章：インフラ準備編</h1>
         <p>WordPressを爆速かつ安全に動かすための「新天地」を構築します。サーバー選定からテーマの決定までを網羅します。</p>
-    </div>
+    </article>
 
-    <div class="article-list-container">
-        <a href="migration-5.html" class="article-item-card">
-            <span class="article-item-number">5</span>
-            <span class="article-item-title">失敗しないレンタルサーバー選定：速度と安定性の正解</span>
-            <span class="article-item-arrow">→</span>
-        </a>
-
-        <a href="migration-6.html" class="article-item-card">
-            <span class="article-item-number">6</span>
-            <span class="article-item-title">ドメイン管理の継続：紐付け変更の技術</span>
-            <span class="article-item-arrow">→</span>
-        </a>
-
-        <a href="migration-7.html" class="article-item-card">
-            <span class="article-item-number">7</span>
-            <span class="article-item-title">WordPressのインストールと初期セキュリティ設定</span>
-            <span class="article-item-arrow">→</span>
-        </a>
-
-        <a href="migration-8.html" class="article-item-card">
-            <span class="article-item-number">8</span>
-            <span class="article-item-title">移行に適した「SEO特化型テーマ」の選定基準</span>
-            <span class="article-item-arrow">→</span>
-        </a>
-    </div>
+    <section class="category-section">
+        <h2 style="font-size: 1.2rem; font-weight: bold; margin-bottom: 25px;">第2章：全記事リスト</h2>
+        <div class="article-card-list">
+            <a href="migration-5.html" class="migration-article-item">
+                <div class="blue-circle">5</div>
+                <div>
+                    <span class="card-title">失敗しないレンタルサーバー選定：速度と安定性の正解</span>
+                    <span class="card-desc">WordPress運用に最適なスペックとコストのバランス。</span>
+                </div>
+            </a>
+            <a href="migration-6.html" class="migration-article-item">
+                <div class="blue-circle">6</div>
+                <div>
+                    <span class="card-title">ドメイン管理の継続：紐付け変更の技術</span>
+                    <span class="card-desc">GitHubから新サーバーへDNSを切り替える手順。</span>
+                </div>
+            </a>
+            <a href="migration-7.html" class="migration-article-item">
+                <div class="blue-circle">7</div>
+                <div>
+                    <span class="card-title">WordPressのインストールと初期セキュリティ設定</span>
+                    <span class="card-desc">不正アクセスを防ぐための必須プラグインと設定。</span>
+                </div>
+            </a>
+            <a href="migration-8.html" class="migration-article-item">
+                <div class="blue-circle">8</div>
+                <div>
+                    <span class="card-title">移行に適した「SEO特化型テーマ」の選定基準</span>
+                    <span class="card-desc">表示速度を犠牲にしない軽量かつ多機能なテーマ選び。</span>
+                </div>
+            </a>
+        </div>
+    </section>
 </main>
 
-<footer class="footer-text">
+<footer class="footer">
     <div class="container">
         <p>&copy; 2026 Zero-Cost SEO - 星 友和</p>
     </div>
