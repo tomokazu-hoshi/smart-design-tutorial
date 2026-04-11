@@ -52,6 +52,13 @@
         .mini-card span { color: #3498db; font-weight: bold; margin-right: 10px; }
         .mini-card.current { border: 2px solid #3498db; background: #f0faff; }
 
+        /* 追加：あわせてチェックしたい応用記事 */
+        .applied-section { margin-top: 40px; padding-top: 20px; border-top: 2px solid #e1e8ed; }
+        .applied-section h3 { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 15px; }
+        .bonus-card { display: flex; align-items: center; background: #e67e22; color: white; padding: 15px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 0.85rem; transition: background 0.2s, transform 0.2s; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .bonus-card:hover { background: #d35400; transform: translateY(-2px); }
+        .bonus-card span { margin-right: 10px; background: rgba(255,255,255,0.2); width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; border-radius: 50%; flex-shrink: 0; }
+
         /* 6. 目次へ戻るリンク */
         .footer-nav { text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #ddd; }
         .footer-nav a { color: #3498db; font-weight: bold; text-decoration: none; font-size: 0.9rem; }
@@ -70,7 +77,7 @@
 
     <article class="post-content">
         <h1>1. GitHub Pagesの限界とWordPressの優位性</h1>
-        <p>Zero-Cost SEOで構築してきたGitHub Pagesは、維持費0円で爆速という、初期段階では最強の武器でした。しかし、サイトが100記事を超え、ビジネスとして本格化するにつれ、いくつかの「壁」が見えてきます。</p>
+        <p>Zero-Cost SEOで構築してきたGitHub Pagesは、維持費0円で爆速という, 初期段階では最強の武器でした。しかし、サイトが100記事を超え、ビジネスとして本格化するにつれ、いくつかの「壁」が見えてきます。</p>
         
         <h3>静的サイトの限界：機能の拡張性</h3>
         <p>GitHub Pagesは「静的」なサイトです。つまり、データベースを持ちません。そのため、読者からのコメント機能、サイト内検索、会員限定コンテンツといった「動的」な機能を組み込むには、常に外部サービスを頼る必要があります。WordPressなら、これらの機能はプラグイン一つで完結します。</p>
@@ -98,6 +105,13 @@
         <a href="migration-2.html" class="mini-card"><span>2</span> 「自分の時間」を「お金」で買う：レバレッジの考え方</a>
         <a href="migration-3.html" class="mini-card"><span>3</span> 移行すべき数値基準：PV数と収益性のデッドライン</a>
         <a href="migration-4.html" class="mini-card"><span>4</span> WordPress移行で得られる3つの武器</a>
+    </section>
+
+    <section class="applied-section">
+        <h3>あわせてチェックしたい応用記事</h3>
+        <a href="https://tomokazu-hoshi.github.io/theme-main.html" class="bonus-card">
+            <span>★</span> 【プロ厳選】収益を加速させるWordPressテーマ比較ガイド
+        </a>
     </section>
 
     <div class="footer-nav">
