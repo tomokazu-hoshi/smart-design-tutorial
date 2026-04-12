@@ -10,6 +10,10 @@
         h2 { border-left: 5px solid #3498db; padding-left: 15px; margin-top: 40px; }
         .intro { background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); margin-bottom: 30px; }
         
+        /* 戻るリンクのスタイル */
+        .back-to-guide { display: inline-block; margin-bottom: 20px; text-decoration: none; color: #3498db; font-weight: bold; font-size: 0.9rem; }
+        .back-to-guide:hover { text-decoration: underline; }
+        
         /* 2x2 Box Layout */
         .nav-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; margin-bottom: 40px; }
         .nav-item { background: #3498db; color: white; padding: 25px; text-align: center; text-decoration: none; border-radius: 10px; font-weight: bold; transition: transform 0.2s, background 0.2s; display: flex; align-items: center; justify-content: center; font-size: 1.1em; }
@@ -20,15 +24,22 @@
         .btn-more { display: inline-block; background: #e67e22; color: white; padding: 10px 25px; text-decoration: none; border-radius: 5px; font-weight: bold; margin-top: 15px; transition: opacity 0.2s; }
         .btn-more:hover { opacity: 0.8; }
         
+        /* 下部戻るボタン */
+        .footer-nav { text-align: center; margin-top: 50px; padding-top: 20px; border-top: 1px solid #ddd; }
+        .btn-back-main { display: inline-block; background: #3498db; color: white; padding: 12px 30px; text-decoration: none; border-radius: 30px; font-weight: bold; transition: background 0.2s; }
+        .btn-back-main:hover { background: #2980b9; }
+
         @media (max-width: 600px) { .nav-grid { grid-template-columns: 1fr; } }
     </style>
 </head>
 <body>
 
+    <a href="https://tomokazu-hoshi.github.io/migration-guide.html" class="back-to-guide">← WordPress移行ガイドに戻る</a>
+
     <h1>WordPressテーマ選びの決定版</h1>
 
     <div class="intro">
-        <p>WordPressのテーマ選びは、単なる着せ替えではありません。サイトの表示速度、SEO構造、そして収益化の導線を左右する<strong>「収益の土台」</strong>です。本記事ではゼロコストSEOの視点で、今選ぶべき答えをまとめました。</p>
+        <p>WordPressのテーマ選びは、単なる着せ替えではありません。サイトの表示速度、SEO構造、 seniorそして収益化の導線を左右する<strong>「収益の土台」</strong>です。本記事ではゼロコストSEOの視点で、今選ぶべき答えをまとめました。</p>
     </div>
 
     <div class="nav-grid">
@@ -73,6 +84,14 @@
         </ul>
         <a href="theme-ec.html" class="btn-more">EC向けテーマを詳しく見る</a>
     </div>
+
+    <div class="footer-nav">
+        <a href="https://tomokazu-hoshi.github.io/migration-guide.html" class="btn-back-main">WordPress移行ガイド目次へ戻る</a>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 0; color: #999; font-size: 0.8rem;">
+        <p>&copy; 2026 Zero-Cost SEO - 星 友和</p>
+    </footer>
 
 </body>
 </html>
